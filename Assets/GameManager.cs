@@ -1,8 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class GameManager : MonoBehaviour
+namespace FSS
 {
-
+    public class GameManager : MonoBehaviour
+    {
+        [Header("Ram")]
+        [SerializeField] public GameObject[] m_ramPips;
+    }
 }

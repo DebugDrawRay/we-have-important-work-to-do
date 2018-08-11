@@ -6,6 +6,7 @@ namespace FSS
 {
 	public static class Settings
 	{
-		
+        public const float windowCost = 1;
+        public const float startRam = 32;
 	}
 }

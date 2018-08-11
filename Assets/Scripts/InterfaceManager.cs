@@ -2,27 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-public class InterfaceManager : MonoBehaviour
+namespace FSS
 {
-    [SerializeField] private RectTransform m_minimizedContainer;
-    [SerializeField] private GameObject m_startMenu;
-
-    public static InterfaceManager instance;
-
-    private void Awake()
+    public class InterfaceManager : MonoBehaviour
     {
-        instance = this;
-        m_startMenu.SetActive(false);
-    }
+        [SerializeField] private RectTransform m_minimizedContainer;
+        [SerializeField] private GameObject m_startMenu;
 
-    public void AddToMinimized(RectTransform item)
-    {
-        item.SetParent(m_minimizedContainer);
-        item.GetComponent<Toggle>().group = m_minimizedContainer.GetComponent<ToggleGroup>();
-    }
+        public static InterfaceManager instance;
 
-    public void ToggleStartMenu(bool active)
-    {
-        m_startMenu.SetActive(active);
+        private void Awake()
+        {
+            instance = this;
+            m_startMenu.SetActive(false);
+        }
+
+        public void AddToMinimized(RectTransform item)
+        {
+            item.SetParent(m_minimizedContainer);
+            item.GetComponent<Toggle>().group = m_minimizedContainer.GetComponent<ToggleGroup>();
+        }
+
+        public void ToggleStartMenu(bool active)
+        {
+            m_startMenu.SetActive(active);
+        }
     }
 }

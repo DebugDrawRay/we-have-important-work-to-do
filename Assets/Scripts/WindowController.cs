@@ -8,7 +8,7 @@ namespace FSS
 	{
         [SerializeField] private GameObject m_minimizeIcon;
         [SerializeField] private Image m_content;
-        [SerializeField] private Text m_name;
+        [SerializeField] private SuperTextMesh m_name;
         [SerializeField] private Image m_icon;
         private Toggle m_miniIcon;
 		private RectTransform m_rt;
