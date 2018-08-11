@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class InterfaceManager : MonoBehaviour
 {
     [SerializeField] private RectTransform m_minimizedContainer;
@@ -18,10 +18,11 @@ public class InterfaceManager : MonoBehaviour
     public void AddToMinimized(RectTransform item)
     {
         item.SetParent(m_minimizedContainer);
+        item.GetComponent<Toggle>().group = m_minimizedContainer.GetComponent<ToggleGroup>();
     }
 
-    public void ToggleStartMenu()
+    public void ToggleStartMenu(bool active)
     {
-        m_startMenu.SetActive(!m_startMenu.activeSelf);
+        m_startMenu.SetActive(active);
     }
 }

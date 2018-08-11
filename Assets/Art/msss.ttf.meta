@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 03c4f8b15faf951409d215423f3acc5c
+guid: f8e063208028f394ca151ef457240651
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,12 +8,12 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Px437 IBM ISO8
+  fontName: pix M 8pt
   fontNames:
-  - Px437 IBM ISO8
+  - pix M 8pt
   fallbackFontReferences: []
   customCharacters: 
-  fontRenderingMode: 2
+  fontRenderingMode: 0
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1
