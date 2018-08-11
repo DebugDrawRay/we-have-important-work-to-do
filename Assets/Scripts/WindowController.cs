@@ -14,6 +14,7 @@ namespace FSS
 		private RectTransform m_rt;
         private Vector3 m_cursorOffset;
 
+        private GameManager.WindowCallback m_onClose;
         private void Awake()
         {
             m_rt = GetComponent<RectTransform>();
@@ -23,29 +24,39 @@ namespace FSS
         private void Start()
         {
             InterfaceManager.instance.AddToMinimized(m_miniIcon.GetComponent<RectTransform>());
-            m_miniIcon.onValueChanged.AddListener(ToggleMinimized);
-            m_miniIcon.isOn = gameObject.activeInHierarchy;
+            m_miniIcon.onValueChanged.AddListener(ToggleMinimizedTaskbar);
+            m_miniIcon.isOn = gameObject.activeSelf;
         }
 
-        public void Initialize(Sprite graphic, string name, Sprite icon, bool startMinimized = false)
+        public void Initialize(Sprite graphic, string name, Sprite icon, GameManager.WindowCallback callback, bool startMinimized = false)
         {
             gameObject.SetActive(!startMinimized);
             m_miniIcon.isOn = !startMinimized;
             m_content.sprite = graphic;
             m_name.text = name;
             m_icon.sprite = icon;
+            m_onClose += callback;
+            transform.SetAsLastSibling();
         }
         public void ToggleMinimized()
 		{
             gameObject.SetActive(!gameObject.activeSelf);
             m_miniIcon.isOn = gameObject.activeSelf;
         }
-        public void ToggleMinimized(bool active)
+        public void ToggleMinimizedTaskbar(bool active)
         {
-            gameObject.SetActive(active);
+            if(!m_miniIcon.isOn)
+            {
+                InterfaceManager.instance.SelectMinimized(m_miniIcon.GetComponent<RectTransform>());
+            }
+            gameObject.SetActive(true);
+            m_miniIcon.isOn = true;
+            transform.SetAsLastSibling();
         }
+
         public void Close()
 		{
+            m_onClose(this);
             Destroy(gameObject);
             Destroy(m_miniIcon.gameObject);
 		}

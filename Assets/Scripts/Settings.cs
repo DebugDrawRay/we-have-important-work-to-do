@@ -6,7 +6,12 @@ namespace FSS
 {
 	public static class Settings
 	{
-        public const float windowCost = 1;
-        public const float startRam = 32;
-	}
+        //Ram
+        public const float WindowCost = 1;
+        public const float StartRam = 32;
+
+        //Seconds 
+        public const float StartPopupInterval = 5f;
+
+    }
 }

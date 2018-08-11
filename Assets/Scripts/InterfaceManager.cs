@@ -11,6 +11,7 @@ namespace FSS
 
         public static InterfaceManager instance;
 
+        private RectTransform m_lastClicked;
         private void Awake()
         {
             instance = this;
@@ -19,13 +20,22 @@ namespace FSS
 
         public void AddToMinimized(RectTransform item)
         {
+            SelectMinimized(item);
             item.SetParent(m_minimizedContainer);
-            item.GetComponent<Toggle>().group = m_minimizedContainer.GetComponent<ToggleGroup>();
         }
 
         public void ToggleStartMenu(bool active)
         {
             m_startMenu.SetActive(active);
+        }
+
+        public void SelectMinimized(RectTransform mini)
+        {
+            if (m_lastClicked != null)
+            {
+                m_lastClicked.GetComponent<Toggle>().graphic.CrossFadeAlpha(0, 0, true);
+            }
+            m_lastClicked = mini;
         }
     }
 }
