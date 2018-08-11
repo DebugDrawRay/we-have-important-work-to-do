@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61a56ad099a075c4aafb85a3cfcb4e1c
+guid: 58c35d2a5928d304fa32d30c987766c4
 TrueTypeFontImporter:
   externalObjects: {}
   serializedVersion: 4
@@ -8,13 +8,12 @@ TrueTypeFontImporter:
   characterSpacing: 0
   characterPadding: 1
   includeFontData: 1
-  fontName: Microsoft Sans Serif
+  fontName: Px437 ATI 9x16
   fontNames:
-  - Microsoft Sans Serif
-  fallbackFontReferences:
-  - {instanceID: 0}
+  - Px437 ATI 9x16
+  fallbackFontReferences: []
   customCharacters: 
-  fontRenderingMode: 2
+  fontRenderingMode: 0
   ascentCalculationMode: 1
   useLegacyBoundsCalculation: 0
   shouldRoundAdvanceValue: 1
