@@ -7,32 +7,37 @@ namespace FSS
 	public class WindowController : MonoBehaviour 
 	{
         [SerializeField] private GameObject m_minimizeIcon;
-        private Button miniIcon;
+        [SerializeField] private Image m_content;
+        private Button m_miniIcon;
 		private RectTransform m_rt;
         private Vector3 m_cursorOffset;
 
 		private void Awake()
 		{
 			m_rt = GetComponent<RectTransform>();
-            miniIcon = Instantiate(m_minimizeIcon).GetComponent<Button>();
-            miniIcon.onClick.AddListener(Enlarge);
-            InterfaceManager.instance.AddToMinimized(miniIcon.GetComponent<RectTransform>());
+            m_miniIcon = Instantiate(m_minimizeIcon).GetComponent<Button>();
+            InterfaceManager.instance.AddToMinimized(m_miniIcon.GetComponent<RectTransform>());
 		}
 
-		public void Minimize()
-		{
-            gameObject.SetActive(false);
-            m_minimizeIcon.SetActive(true);
+        private void Start()
+        {
+            m_miniIcon.onClick.AddListener(ToggleMinimized);
         }
 
-        public void Enlarge()
+        public void Initialize(Sprite graphic, bool startMinimized = false)
         {
-            gameObject.SetActive(true);
+            gameObject.SetActive(!startMinimized);
+            m_content.sprite = graphic;
+        }
+        public void ToggleMinimized()
+		{
+            gameObject.SetActive(!gameObject.activeSelf);
         }
 
         public void Close()
 		{
-            gameObject.SetActive(false);
+            Destroy(gameObject);
+            Destroy(m_miniIcon.gameObject);
 		}
         public void BeginDrag()
         {
