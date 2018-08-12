@@ -16,24 +16,23 @@ namespace FSS
         [SerializeField] private GameObject m_desktopPet;
 
         private List<Emoticon> m_currentEmotes = new List<Emoticon>();
-        private DesktopPet m_currentPet;
+        private List<DesktopPet> m_currentPets = new List<DesktopPet>();
 
         private bool m_changeCursor;
         private bool m_emoticons;
         private bool m_slowdown;
         private bool m_pet;
-        private bool m_backgroundChange;
         private bool m_speedUp;
 
         private float m_cursorStart;
         private float m_emoticonsStart;
         private float m_slowdownStart;
         private float m_petStart;
-        private float m_backgroundStart;
         private float m_speedUpStart;
 
         private Sprite m_previousBg;
 
+        private float m_lastEmoteTime;
         public float SpeedMulti
         {
             get
@@ -58,7 +57,7 @@ namespace FSS
         public void Reinitialize()
         {
             DestroyAllEmotes();
-            Destroy(m_currentPet.gameObject);
+            DestroyAllPets();
             Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
 
@@ -68,11 +67,8 @@ namespace FSS
             switch (func)
             {
                 case AdData.Function.BackgroundChange:
-                    m_backgroundStart = Time.time;
-                    m_previousBg = m_background.sprite;
                     ran = Random.Range(0, m_backgrounds.Length);
                     m_background.sprite = m_backgrounds[ran];
-                    m_backgroundChange = true;
                     break;
                 case AdData.Function.Cursor:
                     m_cursorStart = Time.time;
@@ -82,7 +78,9 @@ namespace FSS
                     break;
                 case AdData.Function.DesktopPet:
                     m_petStart = Time.time;
-                    m_currentPet = Instantiate(m_desktopPet, m_elementContainer).GetComponent<DesktopPet>();
+                    DesktopPet pet = Instantiate(m_desktopPet, m_elementContainer).GetComponent<DesktopPet>();
+                    pet.Initialize(DestroyPet);
+                    m_currentPets.Add(pet);
                     m_pet = true;
                     break;
                 case AdData.Function.DownloadSlowdown:
@@ -91,6 +89,7 @@ namespace FSS
                     break;
                 case AdData.Function.Emoticons:
                     m_emoticonsStart = Time.time;
+                    m_lastEmoteTime = Time.time;
                     m_emoticons = true;
                     break;
                 case AdData.Function.PopUpSpeed:
@@ -114,11 +113,11 @@ namespace FSS
             {
                 if (m_emoticonsStart + Settings.PenaltyTime >= Time.time)
                 {
-                    float elapsed = Time.time - m_cursorStart;
-                    if (Mathf.RoundToInt(elapsed) % Settings.EmoteRate == 0)
+                    if (m_lastEmoteTime + Settings.EmoteRate < Time.time)
                     {
                         Emoticon e = Instantiate(m_emote, m_elementContainer).GetComponent<Emoticon>();
                         e.Initialize(DestroyEmote);
+                        m_lastEmoteTime = Time.time;
                     }
                 }
                 else
@@ -130,30 +129,6 @@ namespace FSS
             if (m_slowdown)
             {
 
-            }
-            if (m_pet)
-            {
-                if (m_petStart + Settings.PenaltyTime >= Time.time)
-                {
-                    float elapsed = Time.time - m_cursorStart;
-                    if (Mathf.RoundToInt(elapsed) % Settings.PetPositionRate == 0)
-                    {
-                        m_currentPet.ChangePosition();
-                    }
-                }
-                else
-                {
-                    Destroy(m_currentPet.gameObject);
-                    m_pet = false;
-                }
-            }
-            if (m_backgroundChange)
-            {
-                if (m_backgroundStart + Settings.PenaltyTime < Time.time)
-                {
-                    m_background.sprite = m_previousBg;
-                    m_backgroundChange = false;
-                }
             }
             if (m_speedUp)
             {
@@ -178,6 +153,21 @@ namespace FSS
                 Destroy(e.gameObject);
             }
             m_currentEmotes = new List<Emoticon>();
+        }
+
+        public delegate void PetEvent(DesktopPet pet);
+        public void DestroyPet(DesktopPet pet)
+        {
+            m_currentPets.Remove(pet);
+            Destroy(pet.gameObject);
+        }
+        public void DestroyAllPets()
+        {
+            foreach (DesktopPet e in m_currentPets)
+            {
+                Destroy(e.gameObject);
+            }
+            m_currentPets = new List<DesktopPet>();
         }
     }
 }

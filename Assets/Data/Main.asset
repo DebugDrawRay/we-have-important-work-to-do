@@ -95,7 +95,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 70a7f289b6c728c4683d231bd8145895, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
-    func: 0
+    func: 3
   - name: 77% of people are WRONG
     frames:
     - {fileID: 21300000, guid: f4a10a14a600b774db43f9d0ea537ff5, type: 3}
@@ -122,7 +122,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 87f0025c8174c6a4791c240c54c3a006, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
-    func: 0
+    func: 1
   - name: Dogfriend.com
     frames:
     - {fileID: 21300000, guid: 192b20b086b0d83468ac46e06871b4e9, type: 3}
@@ -163,7 +163,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 2c3e9e0ecb5cf3b49951bf7e65e8e38b, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
-    func: 0
+    func: 2
   - name: Has scinece gone too far?
     frames:
     - {fileID: 21300000, guid: 48773d33fcc365443b8be26da1a36956, type: 3}
@@ -194,7 +194,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a74066ad94461c24398fffc4b5dc5969, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
-    func: 0
+    func: 5
   - name: RAM GRATIS
     frames:
     - {fileID: 21300000, guid: f1bb27ffb412ae146bd6b06f2ea928fa, type: 3}
@@ -209,7 +209,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: d2a6d80213f3b7a4c80036669cb083ca, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 0
-    func: 0
+    func: 6
   - name: Voice-a-loid
     frames:
     - {fileID: 21300000, guid: 752f4f1b590e2ce44969374fcc62335a, type: 3}
@@ -218,4 +218,4 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f8106fe63cbe3bd41aa7fd25026e5783, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
-    func: 0
+    func: 4

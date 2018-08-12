@@ -30,7 +30,7 @@ namespace FSS
         public const float PenaltyTime = 15f;
         public const float PenaltySlowFactor = 2f;
         public const float PenaltySpeedFactor = 2f;
-        public const float EmoteRate = .5f;
+        public const float EmoteRate = .1f;
         public const float PetPositionRate = 1f;
     }
 }

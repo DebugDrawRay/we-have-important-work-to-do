@@ -70,6 +70,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 224253726681394760}
+  - component: {fileID: 114248929859455552}
   m_Layer: 5
   m_Name: MINKU
   m_TagString: Untagged
@@ -95,6 +96,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &114248929859455552
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1753243727557036}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e05806f6fa57948a5073277661e9e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_lines:
+  - Are you ready to see Hatsun's Minku
+  - Minkudayo!!!
+  m_lineInterval: 2
+  m_lineContainer: {fileID: 114631874742022368}
 --- !u!114 &114489811523648212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -306,7 +323,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1753243727557036}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

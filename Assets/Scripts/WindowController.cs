@@ -83,7 +83,11 @@ namespace FSS
         public void WindowFunction()
         {
             transform.SetAsLastSibling();
-            PenaltyController.instance.TriggerPenalty(m_function);
+            if (m_function != AdData.Function.None)
+            {
+                PenaltyController.instance.TriggerPenalty(m_function);
+                Close();
+            }
         }
         public void Resize(Vector2 newSize)
         {

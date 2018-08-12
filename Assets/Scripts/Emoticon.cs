@@ -23,6 +23,8 @@ namespace FSS
             m_lifeTime = Random.Range(m_lifeTimeMin, m_lifeTimeMax);
             int ran = Random.Range(0, m_icons.Length);
             m_mainImage.sprite = m_icons[ran];
+            Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
+            GetComponent<RectTransform>().anchoredPosition = pos;
             m_initialized = true;
         }
 
