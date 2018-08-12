@@ -43,6 +43,8 @@ namespace FSS
             gameObject.SetActive(!startMinimized);
             m_miniIcon.isOn = !startMinimized;
 
+            m_miniIcon.GetComponentInChildren<MinimizedButton>().Initialize(data.name, data.icon);
+
             m_onClose += callback;
             transform.SetAsLastSibling();
         }
@@ -81,7 +83,7 @@ namespace FSS
         public void WindowFunction()
         {
             transform.SetAsLastSibling();
-            
+            PenaltyController.instance.TriggerPenalty(m_function);
         }
         public void Resize(Vector2 newSize)
         {

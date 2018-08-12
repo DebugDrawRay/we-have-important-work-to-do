@@ -10,6 +10,7 @@ namespace FSS
         public const float WindowCost = 1;
         public const float StartRam = 32;
         public const string RamUnit = "mb";
+
         //Time 
         public const float StartPopupInterval = 3f;
 
@@ -21,7 +22,15 @@ namespace FSS
         public const float HardModeTime = 600;
 
         public const float ClockUpdateInterval = 1f;
+
         //Money
         public const int CurrencyOnClose = 1;
+
+        //Penalties
+        public const float PenaltyTime = 15f;
+        public const float PenaltySlowFactor = 2f;
+        public const float PenaltySpeedFactor = 2f;
+        public const float EmoteRate = .5f;
+        public const float PetPositionRate = 1f;
     }
 }

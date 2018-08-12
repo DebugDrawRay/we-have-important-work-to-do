@@ -34,6 +34,7 @@ public class AdData
         None,
         Cursor,
         Emoticons,
+        DownloadSlowdown,
         DesktopPet,
         BackgroundChange,
         PopUpSpeed
