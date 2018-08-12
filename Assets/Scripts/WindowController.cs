@@ -78,9 +78,10 @@ namespace FSS
 		{
             transform.position = m_cursorOffset + Input.mousePosition;
         }
-        public void ActivateFunction()
+        public void WindowFunction()
         {
-
+            transform.SetAsLastSibling();
+            
         }
         public void Resize(Vector2 newSize)
         {

@@ -220,6 +220,8 @@ namespace FSS
         private void AddPopUp()
         {
             WindowController window = Instantiate(m_window, m_windowContainer).GetComponent<WindowController>();
+            AdData data = m_adb.RequestRandom();
+            window.Initialize(data, CloseWindow);
             Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
             RectTransform winRect = window.GetComponent<RectTransform>();
             if (pos.y + (winRect.rect.height / 2) > Screen.height / 2)
@@ -228,8 +230,6 @@ namespace FSS
             }
             winRect.anchoredPosition = pos;
             m_currentWindows.Add(window);
-            AdData data = m_adb.RequestRandom();
-            window.Initialize(data, CloseWindow);
         }
         public void CloseWindow(WindowController window)
         {

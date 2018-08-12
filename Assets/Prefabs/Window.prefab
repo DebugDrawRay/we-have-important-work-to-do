@@ -55,6 +55,7 @@ GameObject:
   - component: {fileID: 224911267515981152}
   - component: {fileID: 222334244668827908}
   - component: {fileID: 114839736950516746}
+  - component: {fileID: 114176201689550518}
   m_Layer: 5
   m_Name: InnerFrame
   m_TagString: Untagged
@@ -72,6 +73,7 @@ GameObject:
   - component: {fileID: 224104339159020058}
   - component: {fileID: 222556288890108296}
   - component: {fileID: 114002002110835932}
+  - component: {fileID: 114585053536859074}
   m_Layer: 5
   m_Name: Content
   m_TagString: Untagged
@@ -250,6 +252,36 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114176201689550518
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1217793650940476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114385269178984620}
+          m_MethodName: WindowFunction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &114231668880794618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -379,7 +411,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 0
   info:
-  - pos: {x: -123.145004, y: 0, z: 0}
+  - pos: {x: -116, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -410,7 +442,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -116.137, y: 0, z: 0}
+  - pos: {x: -108.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -441,7 +473,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -110.137, y: 0, z: 0}
+  - pos: {x: -102.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -472,7 +504,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -102.137, y: 0, z: 0}
+  - pos: {x: -94.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -503,7 +535,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -98.137, y: 0, z: 0}
+  - pos: {x: -90.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -534,7 +566,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -86.137, y: 0, z: 0}
+  - pos: {x: -78.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -565,7 +597,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -84.137, y: 0, z: 0}
+  - pos: {x: -76.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -596,7 +628,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -78.137, y: 0, z: 0}
+  - pos: {x: -70.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -627,7 +659,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -72.137, y: 0, z: 0}
+  - pos: {x: -64.992, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -658,7 +690,7 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -66.137, y: 0, z: 0}
+  - pos: {x: -58.991997, y: 0, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -735,13 +767,13 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 123.145004, y: -8, z: 0}
-  rawBottomRightBounds: {x: -123.145004, y: 8, z: 0}
-  topLeftBounds: {x: 294.005, y: 446.1, z: 0}
-  topRightBounds: {x: 540.29504, y: 446.1, z: 0}
-  bottomLeftBounds: {x: 294.005, y: 430.1, z: 0}
-  bottomRightBounds: {x: 540.29504, y: 430.1, z: 0}
-  centerBounds: {x: 417.15002, y: 438.1, z: 0}
+  rawTopLeftBounds: {x: 116, y: -8, z: 0}
+  rawBottomRightBounds: {x: -116, y: 8, z: 0}
+  topLeftBounds: {x: 301.15002, y: 440.05, z: 0}
+  topRightBounds: {x: 533.15, y: 440.05, z: 0}
+  bottomLeftBounds: {x: 301.15002, y: 424.05, z: 0}
+  bottomRightBounds: {x: 533.15, y: 424.05, z: 0}
+  centerBounds: {x: 417.15002, y: 432.05, z: 0}
   maxX: 64.01601
   minY: -8
   unwrappedMaxX: 65.008
@@ -855,6 +887,36 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114585053536859074
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1263620434384492}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1862395651, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Delegates:
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114385269178984620}
+          m_MethodName: WindowFunction
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  delegates: []
 --- !u!114 &114766029657709004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1225,7 +1287,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 24.15, y: 12.05}
-  m_SizeDelta: {x: 304.29, y: 280.1}
+  m_SizeDelta: {x: 290, y: 268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224911267515981152
 RectTransform:
