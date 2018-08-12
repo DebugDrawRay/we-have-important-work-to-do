@@ -34,11 +34,32 @@ namespace FSS
 
         private Sprite m_previousBg;
 
+        public float SpeedMulti
+        {
+            get
+            {
+                if(m_speedUp)
+                {
+                    return Settings.PenaltySpeedFactor;
+                }
+                else
+                {
+                    return 1;
+                }
+            }
+        }
         public static PenaltyController instance;
 
         private void Awake()
         {
             instance = this;
+        }
+
+        public void Reinitialize()
+        {
+            DestroyAllEmotes();
+            Destroy(m_currentPet.gameObject);
+            Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
         }
 
         public void TriggerPenalty(AdData.Function func)
@@ -128,11 +149,18 @@ namespace FSS
             }
             if (m_backgroundChange)
             {
-
+                if (m_backgroundStart + Settings.PenaltyTime < Time.time)
+                {
+                    m_background.sprite = m_previousBg;
+                    m_backgroundChange = false;
+                }
             }
             if (m_speedUp)
             {
-
+                if (m_speedUpStart + Settings.PenaltyTime < Time.time)
+                {
+                    m_speedUp = false;
+                }
             }
 
         }

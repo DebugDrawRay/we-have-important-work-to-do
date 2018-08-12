@@ -210,7 +210,7 @@ namespace FSS
         }
         private void UpdatePopUps()
         {
-            if(m_lastWindowTime + m_popUpInterval <= Time.time)
+            if(m_lastWindowTime + (m_popUpInterval / PenaltyController.instance.SpeedMulti) <= Time.time)
             {
                 AddPopUp();
                 m_lastWindowTime = Time.time;
@@ -353,6 +353,7 @@ namespace FSS
             InterfaceManager.instance.ToggleStartMenu(false);
             GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             Initialize();
+            PenaltyController.instance.Reinitialize();
             EnterState();
         }
         public void DestroyAllWindows()

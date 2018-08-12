@@ -5,10 +5,20 @@ using UnityEngine.UI;
 public class AnimatedSprite : MonoBehaviour
 {
     public Image m_image;
+    public Sprite[] p_frames;
+    public float p_fps;
+    public bool loadFromPublic;
     private Sprite[] m_frames;
     private float m_fps;
     private bool m_loaded;
 
+    private void Start()
+    {
+        if(loadFromPublic)
+        {
+            Load(p_frames, p_fps);
+        }
+    }
     public void Load(Sprite[] frames, float fps)
     {
         m_frames = frames;
