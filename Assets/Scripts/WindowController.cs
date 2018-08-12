@@ -7,9 +7,9 @@ namespace FSS
 	public class WindowController : MonoBehaviour 
 	{
         [SerializeField] private GameObject m_minimizeIcon;
-        [SerializeField] private Image m_content;
         [SerializeField] private SuperTextMesh m_name;
         [SerializeField] private Image m_icon;
+        private AdData.Function m_function;
         private Toggle m_miniIcon;
 		private RectTransform m_rt;
         private Vector3 m_cursorOffset;
@@ -32,13 +32,14 @@ namespace FSS
             m_miniIcon.isOn = gameObject.activeSelf;
         }
 
-        public void Initialize(Sprite graphic, string name, Sprite icon, GameManager.WindowCallback callback, bool startMinimized = false)
+        public void Initialize(AdData data, GameManager.WindowCallback callback, bool startMinimized = false)
         {
             gameObject.SetActive(!startMinimized);
             m_miniIcon.isOn = !startMinimized;
-            m_content.sprite = graphic;
-            m_name.text = name;
-            m_icon.sprite = icon;
+            m_name.text = data.name;
+            m_icon.sprite = data.icon;
+            GetComponent<AnimatedSprite>().Load(data.frames, data.fps);
+            m_function = data.func;
             m_onClose += callback;
             transform.SetAsLastSibling();
         }
@@ -73,6 +74,10 @@ namespace FSS
 		public void Drag()
 		{
             transform.position = m_cursorOffset + Input.mousePosition;
+        }
+        public void ActivateFunction()
+        {
+
         }
 
 	}

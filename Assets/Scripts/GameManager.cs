@@ -44,6 +44,7 @@ namespace FSS
         [SerializeField] private GameObject m_loginScreen;
         [SerializeField] private float m_stateDelay = 3f;
         [SerializeField] private float m_gameStartDelay = 5f;
+
         [Header("Sequence")]
         [SerializeField] private GameObject m_sequenceScreen;
         [SerializeField] private TypewriterEffect m_welcomePrompt;
@@ -66,6 +67,9 @@ namespace FSS
         [SerializeField] private CanvasGroup m_interfaceCanvas;
         [SerializeField] private DigitalGlitch m_glitch;
         [SerializeField] private float m_glitchSpeed;
+
+        [Header("Ads")]
+        [SerializeField] private AdDatabase m_adb;
 
         private bool m_gameStarted;
         private bool m_endless;
@@ -224,7 +228,8 @@ namespace FSS
             }
             winRect.anchoredPosition = pos;
             m_currentWindows.Add(window);
-            window.Initialize(null, "Test Window", null, CloseWindow);
+            AdData data = m_adb.RequestRandom();
+            window.Initialize(data, CloseWindow);
         }
         public void CloseWindow(WindowController window)
         {

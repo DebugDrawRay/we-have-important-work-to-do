@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c875ee2f3b3e5a941ae7075bd9d93d9f, type: 3}
+  m_Name: Main
+  m_EditorClassIdentifier: 
+  entries:
+  - name: ALIENS WARNING
+    frames:
+    - {fileID: 21300000, guid: 410bdaa98748ba641afbdad1ba314a19, type: 3}
+    - {fileID: 21300000, guid: b9b0779177b1c3c40acebd5e3595bef8, type: 3}
+    - {fileID: 21300000, guid: a1e2072fbd21a754e950bba2dc2512fd, type: 3}
+    - {fileID: 21300000, guid: a76200f657aa80a4f99696ff5b600785, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 3
+    func: 0
+  - name: Cookie Time
+    frames:
+    - {fileID: 21300000, guid: c138150e4a7458e4f83fd66067806b60, type: 3}
+    - {fileID: 21300000, guid: a35fb44a4cffe834f9f73f66aa2040e2, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    func: 0
+  - name: Ducks Digital RAM DLoad
+    frames:
+    - {fileID: 21300000, guid: d531189edd80e0040bdcf587d29551b3, type: 3}
+    - {fileID: 21300000, guid: 757f1d69f2487714daa45b7cfd6ec442, type: 3}
+    - {fileID: 21300000, guid: b6f4379525404d74198a68b11db7a846, type: 3}
+    - {fileID: 21300000, guid: 7274f303b3ce303459ed48fd5a2984a1, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 5
+    func: 0
+  - name: FREE Domain Orange Host
+    frames:
+    - {fileID: 21300000, guid: a5ebad8949495284c874f874b820b297, type: 3}
+    - {fileID: 21300000, guid: a85ddc633dabd6e4d99c3165bbd13371, type: 3}
+    - {fileID: 21300000, guid: 1a235763d6cc7194fa6483d3fa0aa6c6, type: 3}
+    - {fileID: 21300000, guid: 5e5cc5b01892f884b8636564e31c8f41, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    func: 0
+  - name: Free iPod Zune 300GB Click Here
+    frames:
+    - {fileID: 21300000, guid: 2d4bd56710c63fa46b94cdb61992b394, type: 3}
+    - {fileID: 21300000, guid: f9c173e5dcc25e94eb3fca86a24bb95c, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    func: 0
+  - name: Gondolove Dot Gon
+    frames:
+    - {fileID: 21300000, guid: 70b0431c899f97d4e97a450f00a898d0, type: 3}
+    - {fileID: 21300000, guid: 2bf9ff8fb6b900e4a83bdfff94041689, type: 3}
+    - {fileID: 21300000, guid: 6e90f504a8211994192bba85c96f80f6, type: 3}
+    - {fileID: 21300000, guid: 513cacc257bfbcc4691c43573a1149b5, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 5
+    func: 0
+  - name: MINIONS Movie In Thaeters
+    frames:
+    - {fileID: 21300000, guid: 5ad3d7ba5f500654f90dcc4b7e7e9b76, type: 3}
+    - {fileID: 21300000, guid: 1064e50fb67728a478203f8d371f485e, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    func: 0
+  - name: Play Alien 2 Now
+    frames:
+    - {fileID: 21300000, guid: 8d4fbed3b53220943a254cb35c5b06dc, type: 3}
+    - {fileID: 21300000, guid: 3c8d7e06985d33143ade0edfd6519f22, type: 3}
+    - {fileID: 21300000, guid: 91af598c2135ff34d927ab31b0ede616, type: 3}
+    - {fileID: 21300000, guid: 3170d270b21a0d341bf05fa0ac5f91c0, type: 3}
+    - {fileID: 21300000, guid: 5dc458cd1cc052a47bdcba9feab4fc8a, type: 3}
+    - {fileID: 21300000, guid: e8529e4249a38d34eaacfc7a12655232, type: 3}
+    - {fileID: 21300000, guid: 29cf5f8e3dc8b3244a905bc5b8c4ffe5, type: 3}
+    - {fileID: 21300000, guid: 3179ba78e0756b64ba931cd32a29d4e2, type: 3}
+    - {fileID: 21300000, guid: a1915ee55ae53494b98b5300c67ebd8c, type: 3}
+    - {fileID: 21300000, guid: 7279dd2365c66c7488376616e06abbae, type: 3}
+    - {fileID: 21300000, guid: b20c30637d23d884fa1fb514c56686cd, type: 3}
+    - {fileID: 21300000, guid: adc751d351fd34a4d95c5c4de51fa783, type: 3}
+    - {fileID: 21300000, guid: da60f420eeec66f43abab2c8148da57a, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 10
+    func: 0
+  - name: BinBAR Free Downlod Here
+    frames:
+    - {fileID: 21300000, guid: 7e8ae969969ec2f448ec58d79749477b, type: 3}
+    - {fileID: 21300000, guid: e12f67bfd843f704da7f4c8bfcc1b7a0, type: 3}
+    - {fileID: 21300000, guid: 78eaa56659b567a44a88e6848cb730ca, type: 3}
+    - {fileID: 21300000, guid: 70a7f289b6c728c4683d231bd8145895, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    func: 0
+  - name: 77% of people are WRONG
+    frames:
+    - {fileID: 21300000, guid: f4a10a14a600b774db43f9d0ea537ff5, type: 3}
+    - {fileID: 21300000, guid: 5e3ffb4fe379a504e9101287e33c8039, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    func: 0
