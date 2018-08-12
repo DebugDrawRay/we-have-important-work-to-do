@@ -21,7 +21,13 @@ public class AdData
     public Sprite[] frames;
     public Sprite icon;
     public float fps;
-
+    public Vector2 imageSize
+    {
+        get
+        {
+            return frames[0].rect.size;
+        }
+    }
     public Function func;
     public enum Function
     {

@@ -34,12 +34,15 @@ namespace FSS
 
         public void Initialize(AdData data, GameManager.WindowCallback callback, bool startMinimized = false)
         {
-            gameObject.SetActive(!startMinimized);
-            m_miniIcon.isOn = !startMinimized;
             m_name.text = data.name;
             m_icon.sprite = data.icon;
             GetComponent<AnimatedSprite>().Load(data.frames, data.fps);
             m_function = data.func;
+            Resize(data.imageSize);
+
+            gameObject.SetActive(!startMinimized);
+            m_miniIcon.isOn = !startMinimized;
+
             m_onClose += callback;
             transform.SetAsLastSibling();
         }
@@ -78,6 +81,12 @@ namespace FSS
         public void ActivateFunction()
         {
 
+        }
+        public void Resize(Vector2 newSize)
+        {
+            newSize.y += 34;
+            newSize.x += 12;
+            GetComponent<RectTransform>().sizeDelta = newSize;
         }
 
 	}

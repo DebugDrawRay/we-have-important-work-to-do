@@ -800,7 +800,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_minimizeIcon: {fileID: 1397132040090470, guid: 6425079d7b547ad448d5029c399135a4,
     type: 2}
-  m_content: {fileID: 114002002110835932}
   m_name: {fileID: 114368195754421310}
   m_icon: {fileID: 114140275039289030}
 --- !u!114 &114410742566353232
