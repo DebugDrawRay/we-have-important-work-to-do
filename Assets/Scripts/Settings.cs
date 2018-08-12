@@ -15,9 +15,9 @@ namespace FSS
 
         public static DateTime StartClockTime = new DateTime(1986, 1, 1, 9, 0, 0);
         public static DateTime EasyClockEnd = new DateTime(1986, 1, 1, 12, 0, 0);
+        public static DateTime HardClockEnd = new DateTime(1986, 1, 1, 5, 0, 0);
 
         public const float EasyModeTime = 300;
-        public const float MediumModeTime = 600;
         public const float HardModeTime = 900;
 
         public const float ClockUpdateInterval = 1f;
