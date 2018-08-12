@@ -178,7 +178,7 @@ namespace FSS
             {
                 GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
                 GetComponent<Canvas>().worldCamera = Camera.main;
-                Tween glitch = DOTween.To(() => m_glitch.intensity, x => m_glitch.intensity = x, 1, m_glitchSpeed);
+                Tween glitch = DOTween.To(() => m_glitch.intensity, x => m_glitch.intensity = x, .5f, m_glitchSpeed);
                 glitch.OnComplete(DisplayBlueScreen);
             }
         }

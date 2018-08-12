@@ -44,8 +44,9 @@ namespace FSS
         }
         public void ToggleMinimized()
 		{
-            gameObject.SetActive(!gameObject.activeSelf);
-            m_miniIcon.isOn = gameObject.activeSelf;
+            m_miniIcon.isOn = false;
+            gameObject.SetActive(false);
+            m_miniIcon.GetComponent<Toggle>().graphic.CrossFadeAlpha(0, 0, false);
         }
         public void ToggleMinimizedTaskbar(bool active)
         {
