@@ -15,10 +15,14 @@ namespace FSS
         private Vector3 m_cursorOffset;
 
         private GameManager.WindowCallback m_onClose;
+
+        public static List<WindowController> AllWindows = new List<WindowController>();
+
         private void Awake()
         {
             m_rt = GetComponent<RectTransform>();
             m_miniIcon = Instantiate(m_minimizeIcon).GetComponent<Toggle>();
+            AllWindows.Add(this);
         }
 
         private void Start()
@@ -69,5 +73,6 @@ namespace FSS
 		{
             transform.position = m_cursorOffset + Input.mousePosition;
         }
+
 	}
 }

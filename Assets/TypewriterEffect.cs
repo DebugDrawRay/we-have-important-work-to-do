@@ -33,27 +33,33 @@ namespace FSS
 
         public void Write()
         {
-            if (type != null && type.IsActive())
+            if (text != null)
             {
-                type.Kill();
+                if (type != null && type.IsActive())
+                {
+                    type.Kill();
+                }
+                text.text = "";
+                type = text.DOText(m_textToWrite, m_writeSpeed).OnComplete(InvokeOnComplete).SetEase(Ease.Linear);
             }
-            text.text = "";
-            type = text.DOText(m_textToWrite, m_writeSpeed).OnComplete(InvokeOnComplete).SetEase(Ease.Linear);
         }
         public void Revert(bool typewrite)
         {
-            if (type != null && type.IsActive())
+            if (text != null)
             {
-                type.Kill();
-            }
-            text.text = "";
-            if (typewrite)
-            {
-                text.DOText(m_originalText, m_writeSpeed).SetEase(Ease.Linear);
-            }
-            else
-            {
-                text.text = m_originalText;
+                if (type != null && type.IsActive())
+                {
+                    type.Kill();
+                }
+                text.text = "";
+                if (typewrite)
+                {
+                    text.DOText(m_originalText, m_writeSpeed).SetEase(Ease.Linear);
+                }
+                else
+                {
+                    text.text = m_originalText;
+                }
             }
         }
 

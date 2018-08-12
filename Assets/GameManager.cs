@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Kino;
+using DG.Tweening;
 namespace FSS
 {
     public class GameManager : MonoBehaviour
@@ -38,12 +40,18 @@ namespace FSS
         private float m_gameLength;
 
         [Header("Management")]
-        [SerializeField] private TypewriterEffect m_welcomePrompt;
         [SerializeField] private GameObject m_managementGroup;
         [SerializeField] private GameObject m_loginScreen;
-        [SerializeField] private GameObject m_sequenceScreen;
         [SerializeField] private float m_stateDelay = 3f;
         [SerializeField] private float m_gameStartDelay = 5f;
+        [Header("Sequence")]
+        [SerializeField] private GameObject m_sequenceScreen;
+        [SerializeField] private TypewriterEffect m_welcomePrompt;
+        [SerializeField] private TypewriterEffect m_selectPrompt;
+        [SerializeField] private TypewriterEffect m_cursorPrompt;
+        [SerializeField] private GameObject m_easySelect;
+        [SerializeField] private GameObject m_hardSelect;
+        [SerializeField] private GameObject m_endlessSelect;
 
         [Header("Boot")]
         [SerializeField] private GameObject m_bootGroup;
@@ -51,6 +59,13 @@ namespace FSS
         [SerializeField] private GameObject m_bootLogo;
         [SerializeField] private GameObject m_bootInformation;
         [SerializeField] private GameObject m_bootWarning;
+
+        [Header("Game Complete")]
+        [SerializeField] private GameObject m_blueScreen;
+        [SerializeField] private GameObject m_shutdown;
+        [SerializeField] private CanvasGroup m_interfaceCanvas;
+        [SerializeField] private DigitalGlitch m_glitch;
+        [SerializeField] private float m_glitchSpeed;
 
         private bool m_gameStarted;
         private bool m_endless;
@@ -68,14 +83,36 @@ namespace FSS
         public delegate void WindowCallback(WindowController windows);
         private void Awake()
         {
+            Initialize();
+        }
+        private void Initialize()
+        {
             m_managementGroup.SetActive(false);
             m_loginScreen.SetActive(false);
             m_sequenceScreen.SetActive(false);
+
             m_bootGroup.SetActive(false);
             m_bootGraphics.SetActive(false);
             m_bootLogo.SetActive(false);
             m_bootInformation.SetActive(false);
             m_bootWarning.SetActive(false);
+
+            m_welcomePrompt.Revert(false);
+            m_selectPrompt.Revert(false);
+            m_cursorPrompt.Revert(false);
+            m_easySelect.SetActive(false);
+            m_hardSelect.SetActive(false);
+            m_endlessSelect.SetActive(false);
+
+            m_blueScreen.SetActive(false);
+            m_shutdown.SetActive(false);
+            m_glitch.intensity = 0;
+
+            m_interfaceCanvas.interactable = true;
+            m_interfaceCanvas.blocksRaycasts = true;
+
+            m_currentState = GameState.Boot;
+            m_gameStarted = false;
         }
 
         private void Start()
@@ -90,6 +127,10 @@ namespace FSS
                 UpdatePopUps();
                 UpdateRam();
                 UpdateTime();
+            }
+            if(m_blueScreen.activeSelf && Input.anyKey)
+            {
+                RestartGame();
             }
         }
 
@@ -124,6 +165,29 @@ namespace FSS
             m_gameStartTime = Time.time;
             m_gameStarted = true;
         }
+        public void GameComplete(bool victory)
+        {
+            m_interfaceCanvas.interactable = false;
+            m_interfaceCanvas.blocksRaycasts = false;
+            m_currentState = GameState.Complete;
+            if (victory)
+            {
+                m_shutdown.SetActive(true);
+            }
+            else
+            {
+                GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
+                GetComponent<Canvas>().worldCamera = Camera.main;
+                Tween glitch = DOTween.To(() => m_glitch.intensity, x => m_glitch.intensity = x, 1, m_glitchSpeed);
+                glitch.OnComplete(DisplayBlueScreen);
+            }
+        }
+        public void DisplayBlueScreen()
+        {
+            m_blueScreen.SetActive(true);
+            GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+            m_glitch.intensity = 0;
+        }
 
         private void UpdateRam()
         {
@@ -135,6 +199,10 @@ namespace FSS
             }
 
             m_ramText.text = m_currentUseage.ToString() + " / " + m_currentRam + Settings.RamUnit;
+            if(m_currentUseage > m_currentRam)
+            {
+                GameComplete(false);
+            }
         }
         private void UpdatePopUps()
         {
@@ -187,6 +255,10 @@ namespace FSS
                     float progress = (elapsed / m_gameLength) * m_totalMinutes;
                     m_currentClockTime = Settings.StartClockTime.AddMinutes(Mathf.RoundToInt(progress));
                     m_clock.text = m_currentClockTime.ToShortTimeString();
+                }
+                else
+                {
+                    GameComplete(true);
                 }
             }
         }
@@ -268,6 +340,26 @@ namespace FSS
                 case GameState.Complete:
                     break;
             }
+        }
+
+        public void RestartGame()
+        {
+            DestroyAllWindows();
+            InterfaceManager.instance.ToggleStartMenu(false);
+            GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
+            Initialize();
+            EnterState();
+        }
+        public void DestroyAllWindows()
+        {
+            for (int i =  m_currentWindows.Count - 1; i >= 0; i--)
+            {
+                if (m_currentWindows[i] != null)
+                {
+                    m_currentWindows[i].Close();
+                }
+            }
+            m_currentWindows = new List<WindowController>();
         }
     }
 }
