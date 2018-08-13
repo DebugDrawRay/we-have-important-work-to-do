@@ -39,7 +39,10 @@ namespace FSS
         [Header("Popups")]
         [SerializeField]private GameObject m_window;
         [SerializeField]private RectTransform m_windowContainer;
-        private float m_popUpInterval;
+
+        private float m_popUpStartInterval;
+        private float m_popUpEndInterval;
+
         private float m_lastWindowTime;
         private List<WindowController> m_currentWindows = new List<WindowController>();
 
@@ -61,6 +64,7 @@ namespace FSS
         private float m_lastClockUpdate;
         private float m_totalMinutes;
         private float m_gameLength;
+        private float m_elapsedTime;
 
         [Header("Management")]
         [SerializeField] private GameObject m_managementGroup;
@@ -107,6 +111,13 @@ namespace FSS
         [SerializeField]private AudioClip m_successSound;
 
 
+        public float CurrentPopUpInterval
+        {
+            get
+            {
+                return Mathf.Lerp(m_popUpStartInterval, m_popUpEndInterval, m_elapsedTime / m_gameLength);
+            }
+        }
 
         public bool GameActive
         {
@@ -190,17 +201,22 @@ namespace FSS
         public void SetupGame(int mode)
         {
             m_currentClockTime = Settings.StartClockTime;
+            m_elapsedTime = 0;
             switch (mode)
             {
                 case 0:
                     m_totalMinutes = (Mathf.Abs(Settings.EasyClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour)) * 60;
                     m_gameLength = Settings.EasyModeTime;
                     m_timeText.text = "Shift Ends At: " + Settings.EasyClockEnd.ToShortTimeString();
+                    m_popUpStartInterval = Settings.EasyStartPopupInterval;
+                    m_popUpEndInterval = Settings.EasyEndPopupInterval;
                     break;
                 case 1:
                     m_totalMinutes = (Mathf.Abs(Settings.HardClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour)) * 60;
                     m_gameLength = Settings.HardModeTime;
                     m_timeText.text = "Shift Ends At: " + Settings.HardClockEnd.ToShortTimeString();
+                    m_popUpStartInterval = Settings.HardStartPopupInterval;
+                    m_popUpEndInterval = Settings.HardEndPopupInterval;
                     break;
                 case 2:
                     m_currentClockTime = DateTime.Now;
@@ -212,7 +228,6 @@ namespace FSS
             m_currentRam = Settings.StartRam;
             UpdateRam();
             m_currencyText.text = "0";
-            m_popUpInterval = Settings.StartPopupInterval;
 
             TransitionToNextState(3);
         }
@@ -265,7 +280,7 @@ namespace FSS
         }
         private void UpdatePopUps()
         {
-            float interval = (m_popUpInterval / PenaltyController.instance.SpeedMulti) * ProgramManager.instance.SpeedMulti;
+            float interval = (CurrentPopUpInterval / PenaltyController.instance.SpeedMulti) * ProgramManager.instance.SpeedMulti;
             if (m_lastWindowTime + interval  <= Time.time)
             {
                 AddPopUp();
@@ -389,16 +404,16 @@ namespace FSS
 
         private void UpdateTime()
         {
-            float elapsed = Time.time - m_gameStartTime;
+            m_elapsedTime = Time.time - m_gameStartTime;
             if (m_endless)
             {
                 m_clock.text = DateTime.Now.ToShortTimeString();
             }
             else
             {
-                if (elapsed < m_gameLength)
+                if (m_elapsedTime < m_gameLength)
                 {
-                    float progress = (elapsed / m_gameLength) * m_totalMinutes;
+                    float progress = (m_elapsedTime / m_gameLength) * m_totalMinutes;
                     m_currentClockTime = Settings.StartClockTime.AddMinutes(Mathf.RoundToInt(progress));
                     m_clock.text = m_currentClockTime.ToShortTimeString();
                 }
