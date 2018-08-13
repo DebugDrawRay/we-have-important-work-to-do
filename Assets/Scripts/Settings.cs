@@ -8,7 +8,7 @@ namespace FSS
 	{
         //Ram
         public const float WindowCost = 1;
-        public const float StartRam = 32000;
+        public const float StartRam = 32;
         public const string RamUnit = "MB";
         public const float PurchasableRam = 5;
         

@@ -112,6 +112,9 @@ namespace FSS
         [SerializeField]private AudioClip m_glitchSounds;
         [SerializeField]private AudioClip m_successSound;
 
+        [Header("Nude Tayne")]
+        [SerializeField] private GameObject m_tayne;
+
 
         //Stats
         private int m_adsClosed;
@@ -454,7 +457,21 @@ namespace FSS
         {
             m_playerName = name;
             m_welcomePrompt.m_textToWrite = "> Good morning " + name +".";
+
         }
+
+        public void tayneToggle()
+        {
+            if (name == "Nude Tayne")
+            {
+                m_tayne.SetActive(true);
+            }
+            else
+            {
+                m_tayne.SetActive(false);
+            }
+        }
+
         private int m_maxIterations = 10;
         public void CloseRandom(int i = 0)
         {
@@ -531,6 +548,7 @@ namespace FSS
                     AudioManager.PlayMusic(m_ambientLoop, 0, true);
                     m_managementGroup.SetActive(true);
                     StartCoroutine(BootSequence());
+                    m_tayne.SetActive(false);
                     break;
                 case GameState.Login:
                     m_loginScreen.SetActive(true);
