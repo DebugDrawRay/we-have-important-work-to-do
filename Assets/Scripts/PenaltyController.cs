@@ -135,6 +135,7 @@ namespace FSS
                     m_virus = true;
                     break;
             }
+            m_manager.AddPenalty(1);
         }
 
         private void Update()

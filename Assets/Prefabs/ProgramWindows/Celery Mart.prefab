@@ -4705,7 +4705,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 114612056430603202}
-          m_MethodName: BeginDrag
+          m_MethodName: MouseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

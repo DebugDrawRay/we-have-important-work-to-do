@@ -347,12 +347,12 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 2
+  - eventID: 14
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 114385269178984620}
-          m_MethodName: BeginDrag
+          m_MethodName: EndDrag
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -364,12 +364,12 @@ MonoBehaviour:
           m_CallState: 2
       m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
         Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  - eventID: 14
+  - eventID: 2
     callback:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 114385269178984620}
-          m_MethodName: EndDrag
+          m_MethodName: MouseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -854,6 +854,7 @@ MonoBehaviour:
   m_clickSound: {fileID: 8300000, guid: 5c3d15a7fc67ece4d8b270f70118ee75, type: 3}
   m_adSound: {fileID: 8300000, guid: 891cf5dcdf7a9284d861d7f1034e77ff, type: 3}
   programWindow: 0
+  unmanaged: 0
 --- !u!114 &114410742566353232
 MonoBehaviour:
   m_ObjectHideFlags: 1

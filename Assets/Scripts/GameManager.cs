@@ -101,6 +101,8 @@ namespace FSS
         [Header("Information")]
         [SerializeField] private SuperTextMesh m_timeText;
         [SerializeField] private GameObject m_shutdownWindow;
+        [SerializeField] private SuperTextMesh m_successResults;
+        [SerializeField] private SuperTextMesh m_failureResults;
 
         [Header("Audio")]
         [SerializeField]private AudioClip m_bootJingle;
@@ -110,6 +112,11 @@ namespace FSS
         [SerializeField]private AudioClip m_glitchSounds;
         [SerializeField]private AudioClip m_successSound;
 
+
+        //Stats
+        private int m_adsClosed;
+        private int m_lifetimeMoney;
+        private int m_penalties;
 
         public float CurrentPopUpInterval
         {
@@ -264,6 +271,9 @@ namespace FSS
             m_blueScreen.SetActive(true);
             GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             m_glitch.intensity = 0;
+            string time = Mathf.Floor(m_elapsedTime / 60).ToString("00") + ":" + Mathf.RoundToInt(m_elapsedTime % 60).ToString("00");
+
+            m_failureResults.text = "Play Time: " + time + " - Ads Closed: " + m_adsClosed.ToString() + " - CeleryBucks Earned: " + m_lifetimeMoney + " - Malware Attacks: " + m_penalties.ToString();
         }
 
         private void UpdateRam()
@@ -297,7 +307,10 @@ namespace FSS
                 AddWindow(m_shutdownWindow, AdData.Function.None);
             }
         }
-
+        public void AddPenalty(int amount)
+        {
+            m_penalties+= amount;
+        }
         private void AddPopUp()
         {
             WindowController window = Instantiate(m_window, m_windowContainer).GetComponent<WindowController>();
@@ -387,15 +400,16 @@ namespace FSS
                 if(!window.programWindow)
                 {
                     AddCurrency(Settings.CurrencyOnClose);
+                    m_adsClosed++;
                 }
                 m_currentWindows.Remove(window);
-
             }
         }
 
         public void AddCurrency(int amount)
         {
             m_currentCurrency += amount;
+            m_lifetimeMoney += amount;
             m_currencyText.text = m_currentCurrency.ToString();
         }
 

@@ -369,6 +369,7 @@ MonoBehaviour:
   m_clickSound: {fileID: 8300000, guid: 5c3d15a7fc67ece4d8b270f70118ee75, type: 3}
   m_adSound: {fileID: 0}
   programWindow: 1
+  unmanaged: 0
 --- !u!114 &114538169712387546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1291,7 +1292,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 114528454894627580}
-          m_MethodName: BeginDrag
+          m_MethodName: MouseDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

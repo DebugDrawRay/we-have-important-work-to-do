@@ -650,7 +650,7 @@ MonoBehaviour:
   m_clickSound: {fileID: 8300000, guid: 5c3d15a7fc67ece4d8b270f70118ee75, type: 3}
   m_adSound: {fileID: 0}
   programWindow: 1
-  unmanaged: 0
+  unmanaged: 1
 --- !u!114 &114037191203034982
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1421,11 +1421,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 0.00000721775, y: -17.749975, z: 0}
   rawBottomRightBounds: {x: -250, y: 17.750025, z: 0}
-  topLeftBounds: {x: -207, y: 159.94998, z: 0}
-  topRightBounds: {x: 43, y: 159.94998, z: 0}
-  bottomLeftBounds: {x: -207, y: 124.449974, z: 0}
-  bottomRightBounds: {x: 43, y: 124.449974, z: 0}
-  centerBounds: {x: -82, y: 142.19998, z: 0}
+  topLeftBounds: {x: 193, y: 459.94998, z: 0}
+  topRightBounds: {x: 443, y: 459.94998, z: 0}
+  bottomLeftBounds: {x: 193, y: 424.44998, z: 0}
+  bottomRightBounds: {x: 443, y: 424.44998, z: 0}
+  centerBounds: {x: 318, y: 442.19998, z: 0}
   maxX: 174.048
   minY: -19.5
   unwrappedMaxX: 320
@@ -2845,11 +2845,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 0.000005716458, y: -5.8899913, z: 0}
   rawBottomRightBounds: {x: -198, y: 5.8900084, z: 0}
-  topLeftBounds: {x: -181, y: 81.579994, z: 0}
-  topRightBounds: {x: 17, y: 81.579994, z: 0}
-  bottomLeftBounds: {x: -181, y: 69.799995, z: 0}
-  bottomRightBounds: {x: 17, y: 69.799995, z: 0}
-  centerBounds: {x: -82, y: 75.689995, z: 0}
+  topLeftBounds: {x: 219, y: 381.58, z: 0}
+  topRightBounds: {x: 417, y: 381.58, z: 0}
+  bottomLeftBounds: {x: 219, y: 369.8, z: 0}
+  bottomRightBounds: {x: 417, y: 369.8, z: 0}
+  centerBounds: {x: 318, y: 375.69, z: 0}
   maxX: 166.04802
   minY: -3.7799997
   unwrappedMaxX: 167.04001
@@ -3130,7 +3130,24 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 114027120363074496}
-          m_MethodName: BeginDrag
+          m_MethodName: MouseDown
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 14
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 114027120363074496}
+          m_MethodName: EndDrag
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -4092,11 +4109,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 101, y: -8, z: 0}
   rawBottomRightBounds: {x: -101, y: 8, z: 0}
-  topLeftBounds: {x: -189.99995, y: 188, z: 0}
-  topRightBounds: {x: 12.000046, y: 188, z: 0}
-  bottomLeftBounds: {x: -189.99995, y: 172, z: 0}
-  bottomRightBounds: {x: 12.000046, y: 172, z: 0}
-  centerBounds: {x: -88.999954, y: 180, z: 0}
+  topLeftBounds: {x: 210.00005, y: 488, z: 0}
+  topRightBounds: {x: 412.00006, y: 488, z: 0}
+  bottomLeftBounds: {x: 210.00005, y: 472, z: 0}
+  bottomRightBounds: {x: 412.00006, y: 472, z: 0}
+  centerBounds: {x: 311.00006, y: 480, z: 0}
   maxX: 119.040016
   minY: -8
   unwrappedMaxX: 120.03201

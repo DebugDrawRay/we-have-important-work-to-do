@@ -121,11 +121,14 @@ namespace FSS
             Destroy(gameObject);
             Destroy(m_miniIcon.gameObject);
 		}
+        public void MouseDown()
+        {
+            AudioManager.PlaySfx(m_clickSound);
+        }
         public void BeginDrag()
         {
             m_cursorOffset = transform.position - Input.mousePosition;
             transform.SetAsLastSibling();
-            AudioManager.PlaySfx(m_clickSound);
 
         }
         public void Drag()
