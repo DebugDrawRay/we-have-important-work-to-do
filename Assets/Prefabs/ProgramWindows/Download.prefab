@@ -658,7 +658,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb3e7b77809db94eba302672a693a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_minimizeIcon: {fileID: 1193334840996306, guid: 90cbb52a0c2db5e46bcf7c96dba7d352,
+  m_minimizeIcon: {fileID: 1379050607953074, guid: ee963649efcd464479ba83fd2d8ec778,
     type: 2}
   m_name: {fileID: 114895132413297302}
   m_icon: {fileID: 114214413474754770}
