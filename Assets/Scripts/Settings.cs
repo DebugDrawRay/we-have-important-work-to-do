@@ -54,13 +54,13 @@ namespace FSS
         //Penalties
         public const float PenaltyTime = 15f;
         public const float PenaltySlowFactor = 2f;
-        public const float PenaltySpeedFactor = 2f;
-        public const float EmoteRate = .1f;
+        public const float PenaltySpeedFactor = 4f;
+        public const float EmoteRate = .05f;
         public const float PetPositionRate = 1f;
 
         //Programs
-        public const float AntiAdCloseInterval = 3f;
-        public const float TimeSpeedMulti = 2f;
+        public const float AntiAdCloseInterval = 4f;
+        public const float TimeSpeedMulti = 4f;
         public static Vector2 SmallWindowSize = new Vector2(128, 128);
         public static Vector2 ConsolodatePosition = new Vector2(0, 0);
 

@@ -25,6 +25,7 @@ public class AudioManager : MonoBehaviour
             m_musicSources[i].playOnAwake = false;
             m_musicSources[i].loop = false;
             m_musicSources[i].spatialBlend = 0;
+            m_musicSources[i].reverbZoneMix = 0;
         }
         for (int i = 0; i < m_sfxPoolStartSize; i++)
         {
@@ -33,6 +34,7 @@ public class AudioManager : MonoBehaviour
             s.playOnAwake = false;
             s.loop = false;
             s.spatialBlend = 0;
+            s.reverbZoneMix = 0;
             m_sfxPool.Add(s);
         }
     }
@@ -44,7 +46,7 @@ public class AudioManager : MonoBehaviour
             if (!a.isPlaying)
             {
                 a.clip = clip;
-                a.volume = volumeOverride == -1 ? a.volume : volumeOverride;
+                a.volume = volumeOverride == -1 ? instance.m_sfxVolume : volumeOverride;
                 a.Play();
                 return a;
             }
@@ -52,6 +54,7 @@ public class AudioManager : MonoBehaviour
         AudioSource newSource = instance.gameObject.AddComponent<AudioSource>();
         newSource.clip = clip;
         newSource.volume = volumeOverride;
+        newSource.volume = volumeOverride == -1 ? instance.m_sfxVolume : volumeOverride;
         newSource.Play();
         m_sfxPool.Add(newSource);
         return newSource;

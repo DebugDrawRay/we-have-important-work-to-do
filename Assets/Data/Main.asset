@@ -266,4 +266,47 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
     sfx: {fileID: 8300000, guid: 0201fe7bf06d47046848a8fd0bb7244b, type: 3}
+    func: 13
+  - name: CHUCK IT
+    frames:
+    - {fileID: 21300000, guid: c65e8ebbb601e244b9377ccf4f9563f2, type: 3}
+    - {fileID: 21300000, guid: 4342886ab69b3de47b3e9597648527c1, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 5
+    sfx: {fileID: 0}
+    func: 0
+  - name: OUR COMPUTERS CAN
+    frames:
+    - {fileID: 21300000, guid: 61395c73f6697ec4990449fad98be9e7, type: 3}
+    - {fileID: 21300000, guid: ac61d00f2f4c7834d96e1017837c6f16, type: 3}
+    - {fileID: 21300000, guid: 80176cef2e751684498907bad9a1be53, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 10
+    sfx: {fileID: 8300000, guid: 6746f07af9d8f5f42b41b941337748e4, type: 3}
+    func: 0
+  - name: Wife
+    frames:
+    - {fileID: 21300000, guid: e6041be215731f847b57afb1d0b5a41d, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 0
+    sfx: {fileID: 8300000, guid: f70cf3d9efe633f4eb87734492af6aaf, type: 3}
+    func: 0
+  - name: noid
+    frames:
+    - {fileID: 21300000, guid: b0e14a90b5f4757458f3bb400fd12b10, type: 3}
+    - {fileID: 21300000, guid: 2c2bee853a10c9d41bd18def26355c0c, type: 3}
+    - {fileID: 21300000, guid: 9f199bb9c7b948246bcd78b97af0a09b, type: 3}
+    - {fileID: 21300000, guid: efccf43e0c6103f44bc57f22f3be133e, type: 3}
+    - {fileID: 21300000, guid: 277c48bbc0652e947a55f1f7ddddf959, type: 3}
+    - {fileID: 21300000, guid: 0a1cfbf9ec5bf734290701c527339a01, type: 3}
+    - {fileID: 21300000, guid: 108f3c18489f5d04492e7598755cf536, type: 3}
+    - {fileID: 21300000, guid: b489575dcc5452047a04df894cbd8320, type: 3}
+    - {fileID: 21300000, guid: c4be44e82b2c5c544afd646f34f15edc, type: 3}
+    - {fileID: 21300000, guid: 01be86116d2de94479aafec41c70428a, type: 3}
+    - {fileID: 21300000, guid: 079217083403ad7438de1b12d37ccd04, type: 3}
+    - {fileID: 21300000, guid: c389e7716f5a9e14396961eb9c02f2a1, type: 3}
+    - {fileID: 21300000, guid: e19ce306573ace943990872cf60c96f7, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 3
+    sfx: {fileID: 8300000, guid: 81130850bb9d77740aabf0544ae278b4, type: 3}
     func: 0

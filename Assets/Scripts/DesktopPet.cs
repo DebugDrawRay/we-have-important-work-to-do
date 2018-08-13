@@ -33,7 +33,7 @@ namespace FSS
             m_onDestroy = callback;
             Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
             GetComponent<RectTransform>().anchoredPosition = pos;
-            m_currentSource = AudioManager.PlaySfx(m_audioLoop, .5f);
+            m_currentSource = AudioManager.PlaySfx(m_audioLoop, .25f);
         }
 
         private void Update()
