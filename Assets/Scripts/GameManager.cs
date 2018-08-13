@@ -115,7 +115,7 @@ namespace FSS
         {
             get
             {
-                return Mathf.Lerp(m_popUpStartInterval, m_popUpEndInterval, m_elapsedTime / m_gameLength);
+                return Mathf.Lerp(m_popUpStartInterval, m_popUpEndInterval, Mathf.Min(m_elapsedTime / m_gameLength, 1));
             }
         }
 
@@ -222,6 +222,9 @@ namespace FSS
                     m_currentClockTime = DateTime.Now;
                     m_endless = true;
                     m_timeText.text = "Crunch Time";
+                    m_gameLength = Settings.EndlessRampTime;
+                    m_popUpStartInterval = Settings.EasyStartPopupInterval;
+                    m_popUpEndInterval = Settings.HardEndPopupInterval;
                     break;
             }
             m_clock.text = m_currentClockTime.ToShortTimeString();
@@ -408,6 +411,10 @@ namespace FSS
             if (m_endless)
             {
                 m_clock.text = DateTime.Now.ToShortTimeString();
+                if (m_elapsedTime < m_gameLength)
+                {
+                    float progress = (m_elapsedTime / m_gameLength) * m_totalMinutes;
+                }
             }
             else
             {

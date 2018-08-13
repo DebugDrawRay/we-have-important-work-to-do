@@ -31,6 +31,7 @@ namespace FSS
 
         public const float EasyModeTime = 300;
         public const float HardModeTime = 600;
+        public const float EndlessRampTime = 1600;
 
         public const float ClockUpdateInterval = 1f;
 
@@ -58,7 +59,7 @@ namespace FSS
         //Penalties
         public const float PenaltyTime = 15f;
         public const float PenaltySlowFactor = 2f;
-        public const float PenaltySpeedFactor = 4f;
+        public const float PenaltySpeedFactor = 3f;
         public const float EmoteRate = .05f;
         public const float PetPositionRate = 1f;
         public const float VirusRamPenalty = 5f;

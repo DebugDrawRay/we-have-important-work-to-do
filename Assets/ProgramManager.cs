@@ -206,7 +206,7 @@ namespace FSS
         {
             if (m_antiAdActive)
             {
-                if (m_lastAd + Settings.AntiAdCloseInterval < Time.time)
+                if (m_lastAd + Settings.AntiAdCloseInterval * m_manager.CurrentPopUpInterval < Time.time)
                 {
                     m_manager.CloseRandom();
                     m_lastAd = Time.time;
