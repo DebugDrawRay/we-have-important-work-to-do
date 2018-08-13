@@ -12,12 +12,15 @@ namespace FSS
         [SerializeField] private float m_lineInterval = 2f;
         [SerializeField] private Text m_lineContainer;
         [SerializeField] private float m_lifeTime = 15f;
+        [SerializeField] private AudioClip m_audioLoop;
+
         private float m_timeStart;
 
         private PenaltyController.PetEvent m_onDestroy;
         private float m_lastPosTime;
         private float m_lastLineTime;
 
+        private AudioSource m_currentSource;
         private void Awake()
         {
             m_timeStart = Time.time;
@@ -30,6 +33,7 @@ namespace FSS
             m_onDestroy = callback;
             Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
             GetComponent<RectTransform>().anchoredPosition = pos;
+            m_currentSource = AudioManager.PlaySfx(m_audioLoop, .5f);
         }
 
         private void Update()
@@ -47,6 +51,7 @@ namespace FSS
             }
             if (m_timeStart + m_lifeTime < Time.time)
             {
+                m_currentSource.Stop();
                 m_onDestroy(this);
             }
         }

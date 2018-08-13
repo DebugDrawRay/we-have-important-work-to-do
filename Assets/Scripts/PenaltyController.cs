@@ -14,6 +14,7 @@ namespace FSS
         [SerializeField] private Vector2[] m_cursorHotspots;
         [SerializeField] private Sprite[] m_backgrounds;
         [SerializeField] private GameObject m_desktopPet;
+        [SerializeField] private GameObject m_alienPet;
 
         private List<Emoticon> m_currentEmotes = new List<Emoticon>();
         private List<DesktopPet> m_currentPets = new List<DesktopPet>();
@@ -83,6 +84,13 @@ namespace FSS
                     DesktopPet pet = Instantiate(m_desktopPet, m_elementContainer).GetComponent<DesktopPet>();
                     pet.Initialize(DestroyPet);
                     m_currentPets.Add(pet);
+                    m_pet = true;
+                    break;
+                case AdData.Function.AlienPet:
+                    m_petStart = Time.time;
+                    DesktopPet alien = Instantiate(m_alienPet, m_elementContainer).GetComponent<DesktopPet>();
+                    alien.Initialize(DestroyPet);
+                    m_currentPets.Add(alien);
                     m_pet = true;
                     break;
                 case AdData.Function.DownloadSlowdown:

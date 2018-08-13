@@ -24,6 +24,7 @@ public class AudioManager : MonoBehaviour
             m_musicSources[i].volume = m_musicVolume;
             m_musicSources[i].playOnAwake = false;
             m_musicSources[i].loop = false;
+            m_musicSources[i].spatialBlend = 0;
         }
         for (int i = 0; i < m_sfxPoolStartSize; i++)
         {
@@ -31,11 +32,12 @@ public class AudioManager : MonoBehaviour
             s.volume = m_sfxVolume;
             s.playOnAwake = false;
             s.loop = false;
+            s.spatialBlend = 0;
             m_sfxPool.Add(s);
         }
     }
 
-    public static void PlaySfx(AudioClip clip, float volumeOverride = -1)
+    public static AudioSource PlaySfx(AudioClip clip, float volumeOverride = -1)
     {
         foreach (AudioSource a in m_sfxPool)
         {
@@ -44,7 +46,7 @@ public class AudioManager : MonoBehaviour
                 a.clip = clip;
                 a.volume = volumeOverride == -1 ? a.volume : volumeOverride;
                 a.Play();
-                return;
+                return a;
             }
         }
         AudioSource newSource = instance.gameObject.AddComponent<AudioSource>();
@@ -52,6 +54,7 @@ public class AudioManager : MonoBehaviour
         newSource.volume = volumeOverride;
         newSource.Play();
         m_sfxPool.Add(newSource);
+        return newSource;
     }
     public static void PlaySfxQueue(AudioClip[] clips, bool loopLast)
     {

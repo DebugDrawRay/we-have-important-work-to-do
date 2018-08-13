@@ -119,7 +119,8 @@ MonoBehaviour:
   m_lines: []
   m_lineInterval: 2
   m_lineContainer: {fileID: 0}
-  m_lifeTime: 500
+  m_lifeTime: 15
+  m_audioLoop: {fileID: 8300000, guid: 3219a6dde75fd614699f625d5d3e2a1b, type: 3}
 --- !u!222 &222863171035378670
 CanvasRenderer:
   m_ObjectHideFlags: 1

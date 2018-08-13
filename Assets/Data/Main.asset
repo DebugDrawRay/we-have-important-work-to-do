@@ -20,6 +20,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a76200f657aa80a4f99696ff5b600785, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 3
+    sfx: {fileID: 8300000, guid: 0201fe7bf06d47046848a8fd0bb7244b, type: 3}
     func: 0
   - name: Cookie Time
     frames:
@@ -27,6 +28,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a35fb44a4cffe834f9f73f66aa2040e2, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 0}
     func: 0
   - name: Ducks Digital RAM DLoad
     frames:
@@ -36,6 +38,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 7274f303b3ce303459ed48fd5a2984a1, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
+    sfx: {fileID: 0}
     func: 0
   - name: FREE Domain Orange Host
     frames:
@@ -45,6 +48,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 5e5cc5b01892f884b8636564e31c8f41, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 0}
     func: 0
   - name: Free iPod Zune 300GB Click Here
     frames:
@@ -52,6 +56,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f9c173e5dcc25e94eb3fca86a24bb95c, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 8300000, guid: 4c37e20b0f4db3a44974952b5d5e18cb, type: 3}
     func: 0
   - name: Gondolove Dot Gon
     frames:
@@ -61,6 +66,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 513cacc257bfbcc4691c43573a1149b5, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
+    sfx: {fileID: 0}
     func: 0
   - name: MINIONS Movie In Thaeters
     frames:
@@ -68,6 +74,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 1064e50fb67728a478203f8d371f485e, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 8300000, guid: 87f14f41f667bb045929a1cf907fb7c7, type: 3}
     func: 0
   - name: Play Alien 2 Now
     frames:
@@ -86,6 +93,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: da60f420eeec66f43abab2c8148da57a, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
+    sfx: {fileID: 8300000, guid: 0201fe7bf06d47046848a8fd0bb7244b, type: 3}
     func: 0
   - name: Free BinBAR Compactor
     frames:
@@ -95,6 +103,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 70a7f289b6c728c4683d231bd8145895, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 8300000, guid: 38d73d6d438038246ae0537139611768, type: 3}
     func: 0
   - name: 77% of people are WRONG
     frames:
@@ -102,6 +111,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 5e3ffb4fe379a504e9101287e33c8039, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 0}
     func: 0
   - name: BOWSER in the HAT WORLD
     frames:
@@ -113,6 +123,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: ae95651b5598f4c4c8a442648eb5deb1, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 30
+    sfx: {fileID: 8300000, guid: be9e90d7c84257d4987ba85dcb4f3cb1, type: 3}
     func: 0
   - name: Coolsors!!!
     frames:
@@ -122,6 +133,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 87f0025c8174c6a4791c240c54c3a006, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
+    sfx: {fileID: 0}
     func: 1
   - name: Dogfriend.com
     frames:
@@ -154,6 +166,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 0cc23717c15e58c4f8a151c3118fc9dd, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 4
+    sfx: {fileID: 8300000, guid: 44f7b2e305b0d7448a8ce00aaa043a9e, type: 3}
     func: 0
   - name: Funny Smilyes!
     frames:
@@ -163,6 +176,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 2c3e9e0ecb5cf3b49951bf7e65e8e38b, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
+    sfx: {fileID: 0}
     func: 2
   - name: Has scinece gone too far?
     frames:
@@ -173,18 +187,21 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 84d705512446d2b4285628a743fa6a41, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
+    sfx: {fileID: 0}
     func: 0
   - name: help
     frames:
     - {fileID: 21300000, guid: c30973e4f47269d419eceeeb2a80ab96, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 0
+    sfx: {fileID: 0}
     func: 0
   - name: print command oyster
     frames:
     - {fileID: 21300000, guid: 354dde7025937424fac4af7cbdfe7508, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 0
+    sfx: {fileID: 8300000, guid: 29b7ef2d5094d224db4e2f11f11c5c9c, type: 3}
     func: 0
   - name: Radical Wallpaperz for you
     frames:
@@ -194,6 +211,7 @@ MonoBehaviour:
     - {fileID: 21300000, guid: a74066ad94461c24398fffc4b5dc5969, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
+    sfx: {fileID: 0}
     func: 5
   - name: RAM GRATIS
     frames:
@@ -203,12 +221,14 @@ MonoBehaviour:
     - {fileID: 21300000, guid: 0894cbfb8a7a26b44bb1a931e6c998f8, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
+    sfx: {fileID: 0}
     func: 0
   - name: The Maladboy Madlad 97
     frames:
     - {fileID: 21300000, guid: d2a6d80213f3b7a4c80036669cb083ca, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 0
+    sfx: {fileID: 0}
     func: 6
   - name: Voice-a-loid
     frames:
@@ -218,13 +238,32 @@ MonoBehaviour:
     - {fileID: 21300000, guid: f8106fe63cbe3bd41aa7fd25026e5783, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
+    sfx: {fileID: 0}
     func: 4
   - name: Play Super Alien Online
     frames:
-    - {fileID: 21300000, guid: 752f4f1b590e2ce44969374fcc62335a, type: 3}
-    - {fileID: 21300000, guid: 44e0d29187eaf1042be9ea3db7b6ef87, type: 3}
-    - {fileID: 21300000, guid: ed5ab0d1f5cd4cf47960c9d0a7d7874e, type: 3}
-    - {fileID: 21300000, guid: f8106fe63cbe3bd41aa7fd25026e5783, type: 3}
+    - {fileID: 21300000, guid: edd747519f2b4a04e972cdc57c2f95a5, type: 3}
+    - {fileID: 21300000, guid: 84d544b24e195074f993fc615c029a21, type: 3}
+    - {fileID: 21300000, guid: 48b4a20a1ee705944ac53e8e1954b82c, type: 3}
+    - {fileID: 21300000, guid: f67e50206cbe0724d8eaeb4ff5b2529c, type: 3}
+    - {fileID: 21300000, guid: 4e66ab872ed694445b1e736c6b2c4f9e, type: 3}
+    - {fileID: 21300000, guid: 42126b86381b9bb41bb1edf9f1834ead, type: 3}
+    - {fileID: 21300000, guid: e40dfa1ab2fedf043a55c1b028e1dc47, type: 3}
+    - {fileID: 21300000, guid: af3720178833bfe4bb1ab0087ab408ba, type: 3}
+    - {fileID: 21300000, guid: 47bd80d2c14515249ac3159d0fb4fb2a, type: 3}
+    - {fileID: 21300000, guid: b3e82a3711857564cbf52ccfe51ba05f, type: 3}
+    - {fileID: 21300000, guid: b4d20f6bc61d4fd4dbe9e287658d5efe, type: 3}
+    - {fileID: 21300000, guid: c6b74f8c3582a374da6c66e23b4b225b, type: 3}
+    - {fileID: 21300000, guid: 22f61917987b3a749b577b0d9c3161b8, type: 3}
+    - {fileID: 21300000, guid: 4e28a702b24373e4c9d100239610681b, type: 3}
+    - {fileID: 21300000, guid: bdef415196ed48c4a998508012dc4a60, type: 3}
+    - {fileID: 21300000, guid: 9aef22f0d72d134458dfc52602911f7e, type: 3}
+    - {fileID: 21300000, guid: d1e2831157716d34fb91f95167b9453e, type: 3}
+    - {fileID: 21300000, guid: 66fe18106c1dcfa4d95fb87ef5abd89c, type: 3}
+    - {fileID: 21300000, guid: 5984408aab7c3714e9fc5338861e2725, type: 3}
+    - {fileID: 21300000, guid: 5bbf12559ec1dfe45a19679c3cdeb5d0, type: 3}
+    - {fileID: 21300000, guid: 6901b77004076be4c8dcbde77f016890, type: 3}
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
-    func: 4
+    sfx: {fileID: 8300000, guid: 0201fe7bf06d47046848a8fd0bb7244b, type: 3}
+    func: 0

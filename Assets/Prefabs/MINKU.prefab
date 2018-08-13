@@ -129,6 +129,7 @@ MonoBehaviour:
   m_lineInterval: 2
   m_lineContainer: {fileID: 114631874742022368}
   m_lifeTime: 15
+  m_audioLoop: {fileID: 8300000, guid: 9836f0d2865f32d449db742679e29946, type: 3}
 --- !u!114 &114489811523648212
 MonoBehaviour:
   m_ObjectHideFlags: 1

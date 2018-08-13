@@ -21,6 +21,7 @@ public class AdData
     public Sprite[] frames;
     public Sprite icon;
     public float fps;
+    public AudioClip sfx;
     public Vector2 imageSize
     {
         get
@@ -43,6 +44,7 @@ public class AdData
         Resize,
         Prediction,
         Consolidate,
-        Time
+        Time,
+        AlienPet
     }
 }

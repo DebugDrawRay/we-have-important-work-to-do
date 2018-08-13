@@ -655,6 +655,8 @@ MonoBehaviour:
   m_minimizeIcon: {fileID: 0}
   m_name: {fileID: 114605947535218598}
   m_icon: {fileID: 114718729581027338}
+  m_clickSound: {fileID: 8300000, guid: 5c3d15a7fc67ece4d8b270f70118ee75, type: 3}
+  m_adSound: {fileID: 0}
   programWindow: 1
 --- !u!114 &114501154835562830
 MonoBehaviour:

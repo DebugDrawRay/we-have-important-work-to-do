@@ -78,6 +78,13 @@ namespace FSS
             {
                 ProgramManager.instance.Trigger(m_function, true);
             }
+            else
+            {
+                if(data.sfx != null)
+                {
+                    AudioManager.PlaySfx(data.sfx);
+                }
+            }
 
         }
         public void ToggleMinimized()
