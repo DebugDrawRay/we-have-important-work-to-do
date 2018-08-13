@@ -2559,7 +2559,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 1
   info:
-  - pos: {x: -55.275, y: 4.9799995, z: 0}
+  - pos: {x: -55.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -2590,10 +2590,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -3.0200005, z: 0}
+  - pos: {x: -49.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 0
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2621,10 +2621,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -11.02, z: 0}
+  - pos: {x: -43.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 1
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2652,10 +2652,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -49.275, y: -11.02, z: 0}
+  - pos: {x: -37.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 2
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2683,10 +2683,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -43.275, y: -11.02, z: 0}
+  - pos: {x: -33.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 3
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2714,10 +2714,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -37.275, y: -11.02, z: 0}
+  - pos: {x: -26.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 4
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2745,10 +2745,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -33.275, y: -11.02, z: 0}
+  - pos: {x: -20.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 5
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2776,10 +2776,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -26.275002, y: -11.02, z: 0}
+  - pos: {x: -18.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 6
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2807,10 +2807,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -20.275002, y: -11.02, z: 0}
+  - pos: {x: -12.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 7
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2838,10 +2838,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -18.275002, y: -11.02, z: 0}
+  - pos: {x: -9.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 8
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2869,10 +2869,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -12.275002, y: -11.02, z: 0}
+  - pos: {x: -3.2750015, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 9
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2900,10 +2900,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -9.275002, y: -11.02, z: 0}
+  - pos: {x: 2.7249985, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 10
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2931,10 +2931,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -3.2750015, y: -11.02, z: 0}
+  - pos: {x: 8.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 11
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2962,10 +2962,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 2.7249985, y: -11.02, z: 0}
+  - pos: {x: 14.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 12
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -2993,10 +2993,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 8.724998, y: -11.02, z: 0}
+  - pos: {x: 20.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 13
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3024,80 +3024,9 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 14.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 14
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  - pos: {x: 20.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 15
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  _text: '
-
-
-    420 Celerybucks'
-  drawText: '
-
-
-    420 Celerybucks'
-  hyphenedText: '
-
-
-    420 Celerybucks'
+  _text: 420 Celerybucks
+  drawText: 420 Celerybucks
+  hyphenedText: 420 Celerybucks
   font: {fileID: 12800000, guid: f8e063208028f394ca151ef457240651, type: 3}
   color:
     serializedVersion: 2
@@ -3141,17 +3070,17 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 55.275, y: -12.98, z: 0}
-  rawBottomRightBounds: {x: -55.275, y: 12.98, z: 0}
-  topLeftBounds: {x: 334.135, y: 436.81992, z: 0}
-  topRightBounds: {x: 444.68503, y: 436.81992, z: 0}
-  bottomLeftBounds: {x: 334.135, y: 410.85992, z: 0}
-  bottomRightBounds: {x: 444.68503, y: 410.85992, z: 0}
-  centerBounds: {x: 389.41003, y: 423.8399, z: 0}
+  rawTopLeftBounds: {x: 55.275, y: -9, z: 0}
+  rawBottomRightBounds: {x: -55.275, y: 9, z: 0}
+  topLeftBounds: {x: 334.135, y: 419.83997, z: 0}
+  topRightBounds: {x: 444.685, y: 419.83997, z: 0}
+  bottomLeftBounds: {x: 334.135, y: 401.83997, z: 0}
+  bottomRightBounds: {x: 444.685, y: 401.83997, z: 0}
+  centerBounds: {x: 389.41, y: 410.83997, z: 0}
   maxX: 80.125
-  minY: -17.96
+  minY: -10
   unwrappedMaxX: 81
-  unwrappedMinY: -24
+  unwrappedMinY: -8
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3190,12 +3119,9 @@ MonoBehaviour:
   rememberReadPosition: 1
   drawOrder: 0
   bestFit: 0
-  latestNumber: 16
-  lowestDrawnPosition: -11.02
-  preParsedText: '
-
-
-    420 Celerybucks'
+  latestNumber: 14
+  lowestDrawnPosition: 1
+  preParsedText: 420 Celerybucks
 --- !u!114 &114215892135308590
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3295,7 +3221,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 1
   info:
-  - pos: {x: -55.275, y: 4.9799995, z: 0}
+  - pos: {x: -55.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -3326,10 +3252,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -3.0200005, z: 0}
+  - pos: {x: -49.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 0
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3357,10 +3283,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -11.02, z: 0}
+  - pos: {x: -43.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 1
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3388,10 +3314,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -49.275, y: -11.02, z: 0}
+  - pos: {x: -37.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 2
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3419,10 +3345,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -43.275, y: -11.02, z: 0}
+  - pos: {x: -33.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 3
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3450,10 +3376,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -37.275, y: -11.02, z: 0}
+  - pos: {x: -26.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 4
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3481,10 +3407,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -33.275, y: -11.02, z: 0}
+  - pos: {x: -20.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 5
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3512,10 +3438,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -26.275002, y: -11.02, z: 0}
+  - pos: {x: -18.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 6
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3543,10 +3469,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -20.275002, y: -11.02, z: 0}
+  - pos: {x: -12.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 7
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3574,10 +3500,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -18.275002, y: -11.02, z: 0}
+  - pos: {x: -9.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 8
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3605,10 +3531,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -12.275002, y: -11.02, z: 0}
+  - pos: {x: -3.2750015, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 9
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3636,10 +3562,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -9.275002, y: -11.02, z: 0}
+  - pos: {x: 2.7249985, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 10
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3667,10 +3593,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -3.2750015, y: -11.02, z: 0}
+  - pos: {x: 8.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 11
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3698,10 +3624,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 2.7249985, y: -11.02, z: 0}
+  - pos: {x: 14.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 12
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3729,10 +3655,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 8.724998, y: -11.02, z: 0}
+  - pos: {x: 20.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 13
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -3760,80 +3686,9 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 14.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 14
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  - pos: {x: 20.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 15
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  _text: '
-
-
-    420 Celerybucks'
-  drawText: '
-
-
-    420 Celerybucks'
-  hyphenedText: '
-
-
-    420 Celerybucks'
+  _text: 420 Celerybucks
+  drawText: 420 Celerybucks
+  hyphenedText: 420 Celerybucks
   font: {fileID: 12800000, guid: f8e063208028f394ca151ef457240651, type: 3}
   color:
     serializedVersion: 2
@@ -3877,17 +3732,17 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 55.275, y: -12.98, z: 0}
-  rawBottomRightBounds: {x: -55.275, y: 12.98, z: 0}
-  topLeftBounds: {x: 334.135, y: 244.8199, z: 0}
-  topRightBounds: {x: 444.685, y: 244.8199, z: 0}
-  bottomLeftBounds: {x: 334.135, y: 218.85991, z: 0}
-  bottomRightBounds: {x: 444.685, y: 218.85991, z: 0}
-  centerBounds: {x: 389.41, y: 231.8399, z: 0}
+  rawTopLeftBounds: {x: 55.275, y: -9, z: 0}
+  rawBottomRightBounds: {x: -55.275, y: 9, z: 0}
+  topLeftBounds: {x: 334.135, y: 227.83997, z: 0}
+  topRightBounds: {x: 444.685, y: 227.83997, z: 0}
+  bottomLeftBounds: {x: 334.135, y: 209.83997, z: 0}
+  bottomRightBounds: {x: 444.685, y: 209.83997, z: 0}
+  centerBounds: {x: 389.41, y: 218.83997, z: 0}
   maxX: 80.125
-  minY: -17.96
+  minY: -10
   unwrappedMaxX: 81
-  unwrappedMinY: -24
+  unwrappedMinY: -8
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -3926,12 +3781,9 @@ MonoBehaviour:
   rememberReadPosition: 1
   drawOrder: 0
   bestFit: 0
-  latestNumber: 16
-  lowestDrawnPosition: -11.02
-  preParsedText: '
-
-
-    420 Celerybucks'
+  latestNumber: 14
+  lowestDrawnPosition: 1
+  preParsedText: 420 Celerybucks
 --- !u!114 &114306768365742914
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -5009,7 +4861,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 1
   info:
-  - pos: {x: -55.275, y: 4.9799995, z: 0}
+  - pos: {x: -55.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -5040,10 +4892,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -3.0200005, z: 0}
+  - pos: {x: -49.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 0
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5071,10 +4923,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -11.02, z: 0}
+  - pos: {x: -43.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 1
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5102,10 +4954,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -49.275, y: -11.02, z: 0}
+  - pos: {x: -37.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 2
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5133,10 +4985,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -43.275, y: -11.02, z: 0}
+  - pos: {x: -33.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 3
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5164,10 +5016,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -37.275, y: -11.02, z: 0}
+  - pos: {x: -26.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 4
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5195,10 +5047,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -33.275, y: -11.02, z: 0}
+  - pos: {x: -20.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 5
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5226,10 +5078,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -26.275002, y: -11.02, z: 0}
+  - pos: {x: -18.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 6
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5257,10 +5109,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -20.275002, y: -11.02, z: 0}
+  - pos: {x: -12.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 7
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5288,10 +5140,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -18.275002, y: -11.02, z: 0}
+  - pos: {x: -9.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 8
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5319,10 +5171,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -12.275002, y: -11.02, z: 0}
+  - pos: {x: -3.2750015, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 9
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5350,10 +5202,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -9.275002, y: -11.02, z: 0}
+  - pos: {x: 2.7249985, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 10
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5381,10 +5233,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -3.2750015, y: -11.02, z: 0}
+  - pos: {x: 8.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 11
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5412,10 +5264,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 2.7249985, y: -11.02, z: 0}
+  - pos: {x: 14.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 12
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5443,10 +5295,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 8.724998, y: -11.02, z: 0}
+  - pos: {x: 20.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 13
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -5474,80 +5326,9 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 14.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 14
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  - pos: {x: 20.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 15
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  _text: '
-
-
-    420 Celerybucks'
-  drawText: '
-
-
-    420 Celerybucks'
-  hyphenedText: '
-
-
-    420 Celerybucks'
+  _text: 420 Celerybucks
+  drawText: 420 Celerybucks
+  hyphenedText: 420 Celerybucks
   font: {fileID: 12800000, guid: f8e063208028f394ca151ef457240651, type: 3}
   color:
     serializedVersion: 2
@@ -5591,17 +5372,17 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 55.275, y: -12.98, z: 0}
-  rawBottomRightBounds: {x: -55.275, y: 12.98, z: 0}
-  topLeftBounds: {x: 334.135, y: 308.81992, z: 0}
-  topRightBounds: {x: 444.685, y: 308.81992, z: 0}
-  bottomLeftBounds: {x: 334.135, y: 282.8599, z: 0}
-  bottomRightBounds: {x: 444.685, y: 282.8599, z: 0}
-  centerBounds: {x: 389.41, y: 295.8399, z: 0}
+  rawTopLeftBounds: {x: 55.275, y: -9, z: 0}
+  rawBottomRightBounds: {x: -55.275, y: 9, z: 0}
+  topLeftBounds: {x: 334.135, y: 291.83997, z: 0}
+  topRightBounds: {x: 444.685, y: 291.83997, z: 0}
+  bottomLeftBounds: {x: 334.135, y: 273.83997, z: 0}
+  bottomRightBounds: {x: 444.685, y: 273.83997, z: 0}
+  centerBounds: {x: 389.41, y: 282.83997, z: 0}
   maxX: 80.125
-  minY: -17.96
+  minY: -10
   unwrappedMaxX: 81
-  unwrappedMinY: -24
+  unwrappedMinY: -8
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -5640,12 +5421,9 @@ MonoBehaviour:
   rememberReadPosition: 1
   drawOrder: 0
   bestFit: 0
-  latestNumber: 16
-  lowestDrawnPosition: -11.02
-  preParsedText: '
-
-
-    420 Celerybucks'
+  latestNumber: 14
+  lowestDrawnPosition: 1
+  preParsedText: 420 Celerybucks
 --- !u!114 &114389250554462046
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -6891,7 +6669,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 1
   info:
-  - pos: {x: -55.275, y: 4.9799995, z: 0}
+  - pos: {x: -55.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -6922,10 +6700,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -3.0200005, z: 0}
+  - pos: {x: -49.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 0
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -6953,10 +6731,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -11.02, z: 0}
+  - pos: {x: -43.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 1
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -6984,10 +6762,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -49.275, y: -11.02, z: 0}
+  - pos: {x: -37.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 2
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7015,10 +6793,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -43.275, y: -11.02, z: 0}
+  - pos: {x: -33.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 3
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7046,10 +6824,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -37.275, y: -11.02, z: 0}
+  - pos: {x: -26.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 4
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7077,10 +6855,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -33.275, y: -11.02, z: 0}
+  - pos: {x: -20.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 5
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7108,10 +6886,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -26.275002, y: -11.02, z: 0}
+  - pos: {x: -18.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 6
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7139,10 +6917,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -20.275002, y: -11.02, z: 0}
+  - pos: {x: -12.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 7
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7170,10 +6948,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -18.275002, y: -11.02, z: 0}
+  - pos: {x: -9.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 8
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7201,10 +6979,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -12.275002, y: -11.02, z: 0}
+  - pos: {x: -3.2750015, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 9
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7232,10 +7010,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -9.275002, y: -11.02, z: 0}
+  - pos: {x: 2.7249985, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 10
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7263,10 +7041,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -3.2750015, y: -11.02, z: 0}
+  - pos: {x: 8.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 11
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7294,10 +7072,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 2.7249985, y: -11.02, z: 0}
+  - pos: {x: 14.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 12
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7325,10 +7103,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 8.724998, y: -11.02, z: 0}
+  - pos: {x: 20.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 13
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -7356,80 +7134,9 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 14.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 14
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  - pos: {x: 20.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 15
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  _text: '
-
-
-    420 Celerybucks'
-  drawText: '
-
-
-    420 Celerybucks'
-  hyphenedText: '
-
-
-    420 Celerybucks'
+  _text: 420 Celerybucks
+  drawText: 420 Celerybucks
+  hyphenedText: 420 Celerybucks
   font: {fileID: 12800000, guid: f8e063208028f394ca151ef457240651, type: 3}
   color:
     serializedVersion: 2
@@ -7473,17 +7180,17 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 55.275, y: -12.98, z: 0}
-  rawBottomRightBounds: {x: -55.275, y: 12.98, z: 0}
-  topLeftBounds: {x: 334.135, y: 116.8199, z: 0}
-  topRightBounds: {x: 444.685, y: 116.8199, z: 0}
-  bottomLeftBounds: {x: 334.135, y: 90.85991, z: 0}
-  bottomRightBounds: {x: 444.685, y: 90.85991, z: 0}
-  centerBounds: {x: 389.41, y: 103.839905, z: 0}
+  rawTopLeftBounds: {x: 55.275, y: -9, z: 0}
+  rawBottomRightBounds: {x: -55.275, y: 9, z: 0}
+  topLeftBounds: {x: 334.135, y: 99.839966, z: 0}
+  topRightBounds: {x: 444.685, y: 99.839966, z: 0}
+  bottomLeftBounds: {x: 334.135, y: 81.839966, z: 0}
+  bottomRightBounds: {x: 444.685, y: 81.839966, z: 0}
+  centerBounds: {x: 389.41, y: 90.839966, z: 0}
   maxX: 80.125
-  minY: -17.96
+  minY: -10
   unwrappedMaxX: 81
-  unwrappedMinY: -24
+  unwrappedMinY: -8
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -7522,12 +7229,9 @@ MonoBehaviour:
   rememberReadPosition: 1
   drawOrder: 0
   bestFit: 0
-  latestNumber: 16
-  lowestDrawnPosition: -11.02
-  preParsedText: '
-
-
-    420 Celerybucks'
+  latestNumber: 14
+  lowestDrawnPosition: 1
+  preParsedText: 420 Celerybucks
 --- !u!114 &114544037358450816
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7721,6 +7425,12 @@ MonoBehaviour:
   m_resizePurchase: {fileID: 1418904322501568}
   m_purchaseMessage: {fileID: 1542296121049718}
   m_noMoneyMessage: {fileID: 1802933512670978}
+  m_adPrice: {fileID: 114213660289546446}
+  m_predictionPrice: {fileID: 114388533171281426}
+  m_consolidatorPrice: {fileID: 114998222922696640}
+  m_timePrice: {fileID: 114644443714197620}
+  m_resizePrice: {fileID: 114245045529146102}
+  m_ramPrice: {fileID: 114537976452097892}
 --- !u!114 &114612056430603202
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7739,6 +7449,7 @@ MonoBehaviour:
   m_clickSound: {fileID: 8300000, guid: 5c3d15a7fc67ece4d8b270f70118ee75, type: 3}
   m_adSound: {fileID: 0}
   programWindow: 1
+  unmanaged: 0
 --- !u!114 &114617295642176730
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -7951,7 +7662,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 1
   info:
-  - pos: {x: -55.275, y: 4.9799995, z: 0}
+  - pos: {x: -55.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -7982,10 +7693,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -3.0200005, z: 0}
+  - pos: {x: -49.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 0
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8013,10 +7724,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -11.02, z: 0}
+  - pos: {x: -43.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 1
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8044,10 +7755,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -49.275, y: -11.02, z: 0}
+  - pos: {x: -37.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 2
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8075,10 +7786,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -43.275, y: -11.02, z: 0}
+  - pos: {x: -33.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 3
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8106,10 +7817,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -37.275, y: -11.02, z: 0}
+  - pos: {x: -26.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 4
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8137,10 +7848,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -33.275, y: -11.02, z: 0}
+  - pos: {x: -20.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 5
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8168,10 +7879,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -26.275002, y: -11.02, z: 0}
+  - pos: {x: -18.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 6
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8199,10 +7910,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -20.275002, y: -11.02, z: 0}
+  - pos: {x: -12.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 7
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8230,10 +7941,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -18.275002, y: -11.02, z: 0}
+  - pos: {x: -9.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 8
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8261,10 +7972,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -12.275002, y: -11.02, z: 0}
+  - pos: {x: -3.2750015, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 9
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8292,10 +8003,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -9.275002, y: -11.02, z: 0}
+  - pos: {x: 2.7249985, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 10
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8323,10 +8034,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -3.2750015, y: -11.02, z: 0}
+  - pos: {x: 8.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 11
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8354,10 +8065,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 2.7249985, y: -11.02, z: 0}
+  - pos: {x: 14.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 12
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8385,10 +8096,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 8.724998, y: -11.02, z: 0}
+  - pos: {x: 20.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 13
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -8416,80 +8127,9 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 14.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 14
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  - pos: {x: 20.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 15
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  _text: '
-
-
-    420 Celerybucks'
-  drawText: '
-
-
-    420 Celerybucks'
-  hyphenedText: '
-
-
-    420 Celerybucks'
+  _text: 420 Celerybucks
+  drawText: 420 Celerybucks
+  hyphenedText: 420 Celerybucks
   font: {fileID: 12800000, guid: f8e063208028f394ca151ef457240651, type: 3}
   color:
     serializedVersion: 2
@@ -8533,17 +8173,17 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 55.275, y: -12.98, z: 0}
-  rawBottomRightBounds: {x: -55.275, y: 12.98, z: 0}
-  topLeftBounds: {x: 334.135, y: 372.8199, z: 0}
-  topRightBounds: {x: 444.685, y: 372.8199, z: 0}
-  bottomLeftBounds: {x: 334.135, y: 346.85992, z: 0}
-  bottomRightBounds: {x: 444.685, y: 346.85992, z: 0}
-  centerBounds: {x: 389.41, y: 359.8399, z: 0}
+  rawTopLeftBounds: {x: 55.275, y: -9, z: 0}
+  rawBottomRightBounds: {x: -55.275, y: 9, z: 0}
+  topLeftBounds: {x: 334.135, y: 355.83997, z: 0}
+  topRightBounds: {x: 444.685, y: 355.83997, z: 0}
+  bottomLeftBounds: {x: 334.135, y: 337.83997, z: 0}
+  bottomRightBounds: {x: 444.685, y: 337.83997, z: 0}
+  centerBounds: {x: 389.41, y: 346.83997, z: 0}
   maxX: 80.125
-  minY: -17.96
+  minY: -10
   unwrappedMaxX: 81
-  unwrappedMinY: -24
+  unwrappedMinY: -8
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -8582,12 +8222,9 @@ MonoBehaviour:
   rememberReadPosition: 1
   drawOrder: 0
   bestFit: 0
-  latestNumber: 16
-  lowestDrawnPosition: -11.02
-  preParsedText: '
-
-
-    420 Celerybucks'
+  latestNumber: 14
+  lowestDrawnPosition: 1
+  preParsedText: 420 Celerybucks
 --- !u!114 &114669039479220928
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -17011,7 +16648,7 @@ MonoBehaviour:
   showAudioFoldout: 0
   showEventFoldout: 1
   info:
-  - pos: {x: -55.275, y: 4.9799995, z: 0}
+  - pos: {x: -55.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
     line: 0
@@ -17042,10 +16679,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -3.0200005, z: 0}
+  - pos: {x: -49.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 0
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17073,10 +16710,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -55.275, y: -11.02, z: 0}
+  - pos: {x: -43.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 1
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17104,10 +16741,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -49.275, y: -11.02, z: 0}
+  - pos: {x: -37.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 2
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17135,10 +16772,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -43.275, y: -11.02, z: 0}
+  - pos: {x: -33.275, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 3
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17166,10 +16803,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -37.275, y: -11.02, z: 0}
+  - pos: {x: -26.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 4
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17197,10 +16834,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -33.275, y: -11.02, z: 0}
+  - pos: {x: -20.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 5
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17228,10 +16865,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -26.275002, y: -11.02, z: 0}
+  - pos: {x: -18.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 6
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17259,10 +16896,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -20.275002, y: -11.02, z: 0}
+  - pos: {x: -12.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 7
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17290,10 +16927,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -18.275002, y: -11.02, z: 0}
+  - pos: {x: -9.275002, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 8
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17321,10 +16958,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -12.275002, y: -11.02, z: 0}
+  - pos: {x: -3.2750015, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 9
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17352,10 +16989,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -9.275002, y: -11.02, z: 0}
+  - pos: {x: 2.7249985, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 10
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17383,10 +17020,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: -3.2750015, y: -11.02, z: 0}
+  - pos: {x: 8.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 11
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17414,10 +17051,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 2.7249985, y: -11.02, z: 0}
+  - pos: {x: 14.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 12
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17445,10 +17082,10 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 8.724998, y: -11.02, z: 0}
+  - pos: {x: 20.724998, y: 1, z: 0}
     readTime: 0
     unreadTime: 0
-    line: 1
+    line: 0
     rawIndex: 13
     indent: 0
     drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
@@ -17476,80 +17113,9 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  - pos: {x: 14.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 14
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  - pos: {x: 20.724998, y: -11.02, z: 0}
-    readTime: 0
-    unreadTime: 0
-    line: 1
-    rawIndex: 15
-    indent: 0
-    drawAnimData: {fileID: 11400000, guid: 79b3a58975db94dc0878c84bf4315875, type: 2}
-    size: 8
-    alignment: 0
-    drawOrder: 0
-    ev: []
-    ev2: []
-    colorData: {fileID: 0}
-    gradientData: {fileID: 0}
-    textureData: {fileID: 0}
-    delayData: {fileID: 0}
-    waveData: {fileID: 0}
-    jitterData: {fileID: 0}
-    readDelay: 0
-    audioClipData: {fileID: 0}
-    stopPreviousSound: 1
-    pitchMode: 0
-    overridePitch: 1
-    minPitch: 0.9
-    maxPitch: 1.2
-    speedReadPitch: 0
-    fontData: {fileID: 0}
-    quadData: {fileID: 0}
-    quadIndex: -1
-    materialData: {fileID: 0}
-    soundClipData: {fileID: 0}
-  _text: '
-
-
-    420 Celerybucks'
-  drawText: '
-
-
-    420 Celerybucks'
-  hyphenedText: '
-
-
-    420 Celerybucks'
+  _text: 420 Celerybucks
+  drawText: 420 Celerybucks
+  hyphenedText: 420 Celerybucks
   font: {fileID: 12800000, guid: f8e063208028f394ca151ef457240651, type: 3}
   color:
     serializedVersion: 2
@@ -17593,17 +17159,17 @@ MonoBehaviour:
   leftoverText: 
   textMaterial: {fileID: 2100000, guid: e490a80c3724140c0ad176edb075a09e, type: 2}
   textMesh: {fileID: 0}
-  rawTopLeftBounds: {x: 55.275, y: -12.98, z: 0}
-  rawBottomRightBounds: {x: -55.275, y: 12.98, z: 0}
-  topLeftBounds: {x: 334.135, y: 180.8199, z: 0}
-  topRightBounds: {x: 444.685, y: 180.8199, z: 0}
-  bottomLeftBounds: {x: 334.135, y: 154.85991, z: 0}
-  bottomRightBounds: {x: 444.685, y: 154.85991, z: 0}
-  centerBounds: {x: 389.41, y: 167.8399, z: 0}
+  rawTopLeftBounds: {x: 55.275, y: -9, z: 0}
+  rawBottomRightBounds: {x: -55.275, y: 9, z: 0}
+  topLeftBounds: {x: 334.135, y: 163.83997, z: 0}
+  topRightBounds: {x: 444.685, y: 163.83997, z: 0}
+  bottomLeftBounds: {x: 334.135, y: 145.83997, z: 0}
+  bottomRightBounds: {x: 444.685, y: 145.83997, z: 0}
+  centerBounds: {x: 389.41, y: 154.83997, z: 0}
   maxX: 80.125
-  minY: -17.96
+  minY: -10
   unwrappedMaxX: 81
-  unwrappedMinY: -24
+  unwrappedMinY: -8
   onCompleteEvent:
     m_PersistentCalls:
       m_Calls: []
@@ -17642,12 +17208,9 @@ MonoBehaviour:
   rememberReadPosition: 1
   drawOrder: 0
   bestFit: 0
-  latestNumber: 16
-  lowestDrawnPosition: -11.02
-  preParsedText: '
-
-
-    420 Celerybucks'
+  latestNumber: 14
+  lowestDrawnPosition: 1
+  preParsedText: 420 Celerybucks
 --- !u!222 &222004453809278572
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -18290,8 +17853,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.01, y: -32.00006}
-  m_SizeDelta: {x: 110.55, y: 25.96}
+  m_AnchoredPosition: {x: 116.01, y: -45}
+  m_SizeDelta: {x: 110.55, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224098718537210438
 RectTransform:
@@ -18476,8 +18039,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.01, y: -32.00006}
-  m_SizeDelta: {x: 110.55, y: 25.96}
+  m_AnchoredPosition: {x: 116.009995, y: -45}
+  m_SizeDelta: {x: 110.55, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224219199150335276
 RectTransform:
@@ -18819,8 +18382,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.01, y: -32.00006}
-  m_SizeDelta: {x: 110.55, y: 25.96}
+  m_AnchoredPosition: {x: 116.01, y: -45}
+  m_SizeDelta: {x: 110.55, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224419601746086672
 RectTransform:
@@ -19338,8 +18901,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.01, y: -32.00006}
-  m_SizeDelta: {x: 110.55, y: 25.96}
+  m_AnchoredPosition: {x: 116.01, y: -45}
+  m_SizeDelta: {x: 110.55, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224787571567757414
 RectTransform:
@@ -19374,8 +18937,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.01, y: -32.00006}
-  m_SizeDelta: {x: 110.55, y: 25.96}
+  m_AnchoredPosition: {x: 116.01, y: -45}
+  m_SizeDelta: {x: 110.55, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224820652343059462
 RectTransform:
@@ -19579,8 +19142,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 116.01, y: -32.00006}
-  m_SizeDelta: {x: 110.55, y: 25.96}
+  m_AnchoredPosition: {x: 116.01, y: -45}
+  m_SizeDelta: {x: 110.55, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224999032380831392
 RectTransform:

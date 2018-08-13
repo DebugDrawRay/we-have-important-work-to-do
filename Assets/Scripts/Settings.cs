@@ -9,14 +9,14 @@ namespace FSS
         //Ram
         public const float WindowCost = 1;
         public const float StartRam = 32;
-        public const string RamUnit = "mb";
+        public const string RamUnit = "MB";
         public const float PurchasableRam = 5;
         
         public const float AntiAdRamCost = 10;
         public const float ResizeRamCost = 10;
         public const float PredictionRamCost = 5;
         public const float ConsolidatorRamCost = 5;
-        public const float TimeRamCost = 5;
+        public const float TimeRamCost = 10;
 
         //Time 
         public const float EasyStartPopupInterval = 3f;
@@ -50,7 +50,7 @@ namespace FSS
         public const int CurrencyOnClose = 1;
         public const int AntiAdCost = 50;
         public const int ResizeCost = 50;
-        public const int PredictionCost = 25;
+        public const int PredictionCost = 15;
         public const int ConsolidatorCost = 15;
         public const int TimeCost = 25;
         public const int RamCost = 35;
@@ -63,6 +63,7 @@ namespace FSS
         public const float PetPositionRate = 1f;
         public const float VirusRamPenalty = 5f;
         public const float VirusLength = 15f;
+
         //Programs
         public const float AntiAdCloseInterval = 2f;
         public const float TimeSpeedMulti = 4f;

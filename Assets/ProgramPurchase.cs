@@ -15,7 +15,23 @@ namespace FSS
         [SerializeField] private GameObject m_purchaseMessage;
         [SerializeField] private GameObject m_noMoneyMessage;
 
+        [SerializeField] private SuperTextMesh m_adPrice;
+        [SerializeField] private SuperTextMesh m_predictionPrice;
+        [SerializeField] private SuperTextMesh m_consolidatorPrice;
+        [SerializeField] private SuperTextMesh m_timePrice;
+        [SerializeField] private SuperTextMesh m_resizePrice;
+        [SerializeField] private SuperTextMesh m_ramPrice;
 
+
+        private void Awake()
+        {
+            m_adPrice.text = Settings.AntiAdCost.ToString() + " CeleryBucks";
+            m_predictionPrice.text = Settings.PredictionCost.ToString() + " CeleryBucks";
+            m_consolidatorPrice.text = Settings.ConsolidatorCost.ToString() + " CeleryBucks";
+            m_timePrice.text = Settings.TimeCost.ToString() + " CeleryBucks";
+            m_resizePrice.text = Settings.ResizeCost.ToString() + " CeleryBucks";
+            m_ramPrice.text = Settings.RamCost.ToString() + " CeleryBucks";
+        }
         public void Purchase(int program)
         {
             bool success = ProgramManager.instance.Purchase(program);
