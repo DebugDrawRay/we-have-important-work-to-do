@@ -9,6 +9,7 @@ namespace FSS
         [SerializeField] private GameObject m_minimizeIcon;
         [SerializeField] private SuperTextMesh m_name;
         [SerializeField] private Image m_icon;
+        [SerializeField] private bool m_programWindow;
         private AdData.Function m_function;
         private Toggle m_miniIcon;
 		private RectTransform m_rt;
@@ -32,13 +33,31 @@ namespace FSS
             m_miniIcon.isOn = gameObject.activeSelf;
         }
 
+        public void Initialize(AdData.Function func, GameManager.WindowCallback callback, bool startMinimized = false)
+        {
+            m_function = func;
+
+            gameObject.SetActive(!startMinimized);
+            m_miniIcon.isOn = !startMinimized;
+
+            m_onClose += callback;
+            transform.SetAsLastSibling();
+        }
+
         public void Initialize(AdData data, GameManager.WindowCallback callback, bool startMinimized = false)
         {
             m_name.text = data.name;
             m_icon.sprite = data.icon;
             GetComponent<AnimatedSprite>().Load(data.frames, data.fps);
             m_function = data.func;
-            Resize(data.imageSize);
+            if (ProgramManager.instance.ResizeActive)
+            {
+                Resize(Settings.SmallWindowSize);
+            }
+            else
+            {
+                Resize(data.imageSize);
+            }
 
             gameObject.SetActive(!startMinimized);
             m_miniIcon.isOn = !startMinimized;
@@ -85,8 +104,15 @@ namespace FSS
             transform.SetAsLastSibling();
             if (m_function != AdData.Function.None)
             {
-                PenaltyController.instance.TriggerPenalty(m_function);
-                Close();
+                if(m_programWindow)
+                {
+
+                }
+                else
+                {
+                    PenaltyController.instance.TriggerPenalty(m_function);
+                    Close();
+                }
             }
         }
         public void Resize(Vector2 newSize)

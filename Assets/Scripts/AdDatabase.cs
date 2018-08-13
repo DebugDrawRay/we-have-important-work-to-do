@@ -37,6 +37,12 @@ public class AdData
         DownloadSlowdown,
         DesktopPet,
         BackgroundChange,
-        PopUpSpeed
+        PopUpSpeed,
+        AntiAd,
+        Ram,
+        Resize,
+        Prediction,
+        Consolidate,
+        Time
     }
 }

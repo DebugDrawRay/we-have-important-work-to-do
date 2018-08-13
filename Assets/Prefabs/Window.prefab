@@ -183,14 +183,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.73333335, g: 0.73333335, b: 0.7843138, a: 1}
   m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 73fce83c0190c9a4ab474233975bd27e, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 6d4d9c69694a54b568cdd1c00e2ea954, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -769,11 +769,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 116, y: -8, z: 0}
   rawBottomRightBounds: {x: -116, y: 8, z: 0}
-  topLeftBounds: {x: 301.15002, y: 440.05, z: 0}
-  topRightBounds: {x: 533.15, y: 440.05, z: 0}
-  bottomLeftBounds: {x: 301.15002, y: 424.05, z: 0}
-  bottomRightBounds: {x: 533.15, y: 424.05, z: 0}
-  centerBounds: {x: 417.15002, y: 432.05, z: 0}
+  topLeftBounds: {x: 277, y: 428, z: 0}
+  topRightBounds: {x: 509, y: 428, z: 0}
+  bottomLeftBounds: {x: 277, y: 412, z: 0}
+  bottomRightBounds: {x: 509, y: 412, z: 0}
+  centerBounds: {x: 393, y: 420, z: 0}
   maxX: 64.01601
   minY: -8
   unwrappedMaxX: 65.008
@@ -834,6 +834,7 @@ MonoBehaviour:
     type: 2}
   m_name: {fileID: 114368195754421310}
   m_icon: {fileID: 114140275039289030}
+  m_programWindow: 0
 --- !u!114 &114410742566353232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -929,6 +930,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_image: {fileID: 114002002110835932}
+  p_frames: []
+  p_fps: 0
+  loadFromPublic: 0
 --- !u!114 &114766654202306048
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1275,7 +1279,7 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1427992340714168}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -1286,7 +1290,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 24.15, y: 12.05}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 290, y: 268}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224911267515981152

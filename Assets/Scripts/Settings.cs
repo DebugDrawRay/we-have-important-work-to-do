@@ -10,6 +10,13 @@ namespace FSS
         public const float WindowCost = 1;
         public const float StartRam = 32;
         public const string RamUnit = "mb";
+        public const float PurchasableRam = 5;
+
+        public const float AntiAdRamCost = 5;
+        public const float ResizeRamCost = 5;
+        public const float PredictionRamCost = 5;
+        public const float ConsolidatorRamCost = 5;
+        public const float TimeRamCost = 5;
 
         //Time 
         public const float StartPopupInterval = 3f;
@@ -25,6 +32,11 @@ namespace FSS
 
         //Money
         public const int CurrencyOnClose = 1;
+        public const int AntiAdCost = 10;
+        public const int ResizeCost = 10;
+        public const int PredictionCost = 10;
+        public const int ConsolidatorCost = 10;
+        public const int TimeCost = 10;
 
         //Penalties
         public const float PenaltyTime = 15f;
@@ -32,5 +44,14 @@ namespace FSS
         public const float PenaltySpeedFactor = 2f;
         public const float EmoteRate = .1f;
         public const float PetPositionRate = 1f;
+
+        //Programs
+        public const float AntiAdCloseInterval = 3f;
+        public const float TimeSpeedMulti = 2f;
+        public static Vector2 SmallWindowSize = new Vector2(128, 128);
+        public static Vector2 ConsolodatePosition = new Vector2(0, 0);
+        public const float TimeLength = 15f;
+        public const float PredictionLength = 15f;
+
     }
 }

@@ -12,11 +12,19 @@ namespace FSS
         [SerializeField] private GameObject[] m_ramPips;
         [SerializeField] private SuperTextMesh m_ramText;
         private float m_currentRam;
+        private float m_additionalRam;
+        private float TotalRam
+        {
+            get
+            {
+                return m_currentRam + m_additionalRam;
+            }
+        }
         private float m_currentUseage
         {
             get
             {
-                return Settings.WindowCost * m_currentWindows.Count;
+                return (Settings.WindowCost * m_currentWindows.Count) + ProgramManager.instance.TotalRamUse;
             }
         }
 
@@ -29,6 +37,13 @@ namespace FSS
 
         [Header("Currency")]
         [SerializeField] private SuperTextMesh m_currencyText;
+        public int CurrentCurrency
+        {
+            get
+            {
+                return m_currentCurrency;
+            }
+        }
         private int m_currentCurrency;
         
         [Header("Time")]
@@ -71,6 +86,13 @@ namespace FSS
         [Header("Ads")]
         [SerializeField] private AdDatabase m_adb;
 
+        public bool GameActive
+        {
+            get
+            {
+                return m_currentState == GameState.InGame && m_gameStarted;
+            }
+        }
         private bool m_gameStarted;
         private bool m_endless;
         private string m_playerName;
@@ -114,6 +136,9 @@ namespace FSS
 
             m_interfaceCanvas.interactable = true;
             m_interfaceCanvas.blocksRaycasts = true;
+
+            m_additionalRam = 0;
+            m_currentCurrency = 0;
 
             m_currentState = GameState.Boot;
             m_gameStarted = false;
@@ -195,14 +220,14 @@ namespace FSS
 
         private void UpdateRam()
         {
-            float progress = (m_currentUseage / m_currentRam) * m_ramPips.Length;
+            float progress = (m_currentUseage / TotalRam) * m_ramPips.Length;
 
             for(int i = 0; i < m_ramPips.Length; i++)
             {
                 m_ramPips[i].SetActive(i + 1 <= progress);
             }
 
-            m_ramText.text = m_currentUseage.ToString() + " / " + m_currentRam + Settings.RamUnit;
+            m_ramText.text = m_currentUseage.ToString() + " / " + TotalRam + Settings.RamUnit;
             if(m_currentUseage > m_currentRam)
             {
                 GameComplete(false);
@@ -210,7 +235,8 @@ namespace FSS
         }
         private void UpdatePopUps()
         {
-            if(m_lastWindowTime + (m_popUpInterval / PenaltyController.instance.SpeedMulti) <= Time.time)
+            float interval = (m_popUpInterval / PenaltyController.instance.SpeedMulti) * ProgramManager.instance.SpeedMulti;
+            if (m_lastWindowTime + interval  <= Time.time)
             {
                 AddPopUp();
                 m_lastWindowTime = Time.time;
@@ -222,11 +248,50 @@ namespace FSS
             WindowController window = Instantiate(m_window, m_windowContainer).GetComponent<WindowController>();
             AdData data = m_adb.RequestRandom();
             window.Initialize(data, CloseWindow);
+            if(ProgramManager.instance.ConsolidateActive)
+            {
+                RectTransform winRect = window.GetComponent<RectTransform>();
+                winRect.anchoredPosition = Settings.ConsolodatePosition;
+                if (ProgramManager.instance.PredictionActive)
+                {
+                    ProgramManager.instance.Predict();
+                }
+            }
+            else
+            {
+                if (ProgramManager.instance.PredictionActive)
+                {
+                    Vector2 pos = ProgramManager.instance.PredictionPos;
+                    RectTransform winRect = window.GetComponent<RectTransform>();
+                    if (pos.y + (winRect.rect.height / 2) > Screen.height / 2)
+                    {
+                        pos.y = (Screen.height / 2) - (winRect.rect.height / 2);
+                    }
+                    winRect.anchoredPosition = pos;
+                    ProgramManager.instance.Predict();
+                }
+                else
+                {
+                    Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
+                    RectTransform winRect = window.GetComponent<RectTransform>();
+                    if (pos.y + (winRect.rect.height / 2) > Screen.height / 2)
+                    {
+                        pos.y = (Screen.height / 2) - (winRect.rect.height / 2);
+                    }
+                    winRect.anchoredPosition = pos;
+                }
+            }
+            m_currentWindows.Add(window);
+        }
+        public void AddWindow(GameObject windowGo, AdData.Function func)
+        {
+            WindowController window = Instantiate(windowGo, m_windowContainer).GetComponent<WindowController>();
+            window.Initialize(func, CloseWindow);
             Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
             RectTransform winRect = window.GetComponent<RectTransform>();
             if (pos.y + (winRect.rect.height / 2) > Screen.height / 2)
             {
-                pos.y = (Screen.height/2) - (winRect.rect.height / 2);
+                pos.y = (Screen.height / 2) - (winRect.rect.height / 2);
             }
             winRect.anchoredPosition = pos;
             m_currentWindows.Add(window);
@@ -245,6 +310,12 @@ namespace FSS
             m_currentCurrency += amount;
             m_currencyText.text = m_currentCurrency.ToString();
         }
+
+        public void AddRam(float amount)
+        {
+            m_additionalRam += amount;
+        }
+
 
         private void UpdateTime()
         {
@@ -273,7 +344,11 @@ namespace FSS
             m_playerName = name;
             m_welcomePrompt.m_textToWrite = "> Good morning " + name +".";
         }
-
+        public void CloseRandom()
+        {
+            int ran = UnityEngine.Random.Range(0, m_currentWindows.Count);
+            m_currentWindows[ran].Close();
+        }
         public void TransitionToNextState(int state)
         {
             ExitState();
@@ -354,6 +429,7 @@ namespace FSS
             GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             Initialize();
             PenaltyController.instance.Reinitialize();
+            ProgramManager.instance.Initialize();
             EnterState();
         }
         public void DestroyAllWindows()

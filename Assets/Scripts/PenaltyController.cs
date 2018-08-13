@@ -48,10 +48,12 @@ namespace FSS
             }
         }
         public static PenaltyController instance;
-
+        private GameManager m_manager;
         private void Awake()
         {
             instance = this;
+            m_manager = GetComponent<GameManager>();
+
         }
 
         public void Reinitialize()
@@ -100,6 +102,13 @@ namespace FSS
         }
 
         private void Update()
+        {
+            if(m_manager.GameActive)
+            {
+                UpdatePenalties();
+            }
+        }
+        private void UpdatePenalties()
         {
             if (m_changeCursor)
             {
