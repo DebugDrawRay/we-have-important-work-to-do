@@ -107,6 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e6e05806f6fa57948a5073277661e9e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  m_dialogueActive: 1
   m_lines:
   - I'm Hatsun's Minku!!
   - Minkudayo!!!
