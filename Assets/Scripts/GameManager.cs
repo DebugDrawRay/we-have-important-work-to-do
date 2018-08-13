@@ -411,7 +411,10 @@ namespace FSS
         public void AddCurrency(int amount)
         {
             m_currentCurrency += amount;
-            m_lifetimeMoney += amount;
+            if (amount > 0)
+            {
+                m_lifetimeMoney += amount;
+            }
             m_currencyText.text = m_currentCurrency.ToString();
         }
 

@@ -8,7 +8,7 @@ namespace FSS
 	{
         //Ram
         public const float WindowCost = 1;
-        public const float StartRam = 32;
+        public const float StartRam = 32000;
         public const string RamUnit = "MB";
         public const float PurchasableRam = 5;
         
@@ -66,7 +66,7 @@ namespace FSS
         public const float VirusLength = 15f;
 
         //Programs
-        public const float AntiAdCloseInterval = 2f;
+        public const float AntiAdCloseInterval = 1f;
         public const float TimeSpeedMulti = 4f;
         public static Vector2 SmallWindowSize = new Vector2(128, 128);
         public static Vector2 ConsolodatePosition = new Vector2(0, 0);
