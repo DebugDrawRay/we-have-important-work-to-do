@@ -15,21 +15,25 @@ namespace FSS
         [SerializeField] private Sprite[] m_backgrounds;
         [SerializeField] private GameObject m_desktopPet;
         [SerializeField] private GameObject m_alienPet;
+        [SerializeField] private GameObject m_virusWindow;
 
         private List<Emoticon> m_currentEmotes = new List<Emoticon>();
         private List<DesktopPet> m_currentPets = new List<DesktopPet>();
+        private GameObject m_currentVirusWindow;
 
         private bool m_changeCursor;
         private bool m_emoticons;
         private bool m_slowdown;
         private bool m_pet;
         private bool m_speedUp;
+        private bool m_virus;
 
         private float m_cursorStart;
         private float m_emoticonsStart;
         private float m_slowdownStart;
         private float m_petStart;
         private float m_speedUpStart;
+        private float m_virusStart;
 
         private Sprite m_previousBg;
 
@@ -45,6 +49,21 @@ namespace FSS
                 else
                 {
                     return 1;
+                }
+            }
+        }
+
+        public float RamPenalty
+        {
+            get
+            {
+                if(m_virus)
+                {
+                    return Settings.VirusRamPenalty;
+                }
+                else
+                {
+                    return 0;
                 }
             }
         }
@@ -106,6 +125,15 @@ namespace FSS
                     m_speedUpStart = Time.time;
                     m_speedUp = true;
                     break;
+                case AdData.Function.Virus:
+                    if(m_currentVirusWindow)
+                    {
+                        Destroy(m_currentVirusWindow);
+                    }
+                    m_currentVirusWindow = Instantiate(m_virusWindow, m_elementContainer);
+                    m_virusStart = Time.time;
+                    m_virus = true;
+                    break;
             }
         }
 
@@ -144,9 +172,13 @@ namespace FSS
                     m_emoticons = false;
                 }
             }
-            if (m_slowdown)
+            if (m_virus)
             {
-
+                if (m_virusStart + Settings.VirusLength < Time.time)
+                {
+                    Destroy(m_currentVirusWindow);
+                    m_virus = false;
+                }
             }
             if (m_speedUp)
             {

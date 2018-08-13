@@ -45,6 +45,7 @@ public class AdData
         Prediction,
         Consolidate,
         Time,
-        AlienPet
+        AlienPet,
+        Virus
     }
 }
