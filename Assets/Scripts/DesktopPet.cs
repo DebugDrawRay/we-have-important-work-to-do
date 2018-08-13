@@ -7,6 +7,7 @@ namespace FSS
 {
     public class DesktopPet : MonoBehaviour
     {
+        [SerializeField] private bool m_dialogueActive;
         [SerializeField] private string[] m_lines;
         [SerializeField] private float m_lineInterval = 2f;
         [SerializeField] private Text m_lineContainer;
@@ -33,7 +34,7 @@ namespace FSS
 
         private void Update()
         {
-            if (m_lastLineTime + m_lineInterval < Time.time)
+            if (m_lastLineTime + m_lineInterval < Time.time && m_dialogueActive)
             {
                 int ran = Random.Range(0, m_lines.Length);
                 m_lineContainer.text = m_lines[ran];
