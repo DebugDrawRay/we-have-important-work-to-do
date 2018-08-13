@@ -219,3 +219,12 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
     func: 4
+  - name: Play Super Alien Online
+    frames:
+    - {fileID: 21300000, guid: 752f4f1b590e2ce44969374fcc62335a, type: 3}
+    - {fileID: 21300000, guid: 44e0d29187eaf1042be9ea3db7b6ef87, type: 3}
+    - {fileID: 21300000, guid: ed5ab0d1f5cd4cf47960c9d0a7d7874e, type: 3}
+    - {fileID: 21300000, guid: f8106fe63cbe3bd41aa7fd25026e5783, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 10
+    func: 4
