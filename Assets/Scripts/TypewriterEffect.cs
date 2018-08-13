@@ -8,8 +8,7 @@ namespace FSS
 {
     public class TypewriterEffect : MonoBehaviour
     {
-        [TextArea]
-        public string m_textToWrite;
+        [TextArea] public string m_textToWrite;
         [SerializeField] private float m_writeSpeed;
         [SerializeField] private float m_eventDelay;
         [SerializeField] private bool m_storeOriginalText = true;
