@@ -23,7 +23,7 @@ public class AnimatedSprite : MonoBehaviour
     {
         m_frames = frames;
         m_fps = fps;
-        if (frames != null && frames[0] != null)
+        if (m_frames != null && m_frames[0] != null)
         {
             m_image.sprite = m_frames[0];
         }

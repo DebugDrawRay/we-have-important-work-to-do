@@ -106,6 +106,7 @@ namespace FSS
             if(m_manager.GameActive)
             {
                 UpdatePenalties();
+
             }
         }
         private void UpdatePenalties()

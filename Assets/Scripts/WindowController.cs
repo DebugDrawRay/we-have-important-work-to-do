@@ -112,6 +112,29 @@ namespace FSS
 		{
             transform.position = m_cursorOffset + Input.mousePosition;
         }
+        public void EndDrag()
+        {
+            RectTransform winRect = GetComponent<RectTransform>();
+            Vector2 position = winRect.anchoredPosition;
+                
+            if (position.y + (winRect.rect.height / 2) > Screen.height / 2)
+            {
+                position.y = (Screen.height / 2) - (winRect.rect.height / 2);
+            }
+            if (position.y < -(Screen.height / 2))
+            {
+                position.y = (float)-(Screen.height / 2);
+            }
+            if (position.x > Screen.width / 2)
+            {
+                position.x = (Screen.width / 4) - (winRect.rect.width / 2);
+            }
+            if (position.x < -(Screen.width / 2))
+            {
+                position.x = (float)-(Screen.width / 2);
+            }
+            winRect.anchoredPosition = position;
+        }
         public void WindowFunction()
         {
             transform.SetAsLastSibling();

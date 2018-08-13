@@ -94,6 +94,8 @@ namespace FSS
         [Header("Ads")]
         [SerializeField] private AdDatabase m_adb;
 
+        [Header("Information")]
+        [SerializeField] private SuperTextMesh m_timeText;
         public bool GameActive
         {
             get
@@ -177,16 +179,19 @@ namespace FSS
             switch (mode)
             {
                 case 0:
-                    m_totalMinutes = (Settings.EasyClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour) * 60;
+                    m_totalMinutes = (Mathf.Abs(Settings.EasyClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour)) * 60;
                     m_gameLength = Settings.EasyModeTime;
+                    m_timeText.text = "Shift Ends At: " + Settings.EasyClockEnd.ToShortTimeString();
                     break;
                 case 1:
-                    m_totalMinutes = (Settings.HardClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour) * 60;
+                    m_totalMinutes = (Mathf.Abs(Settings.HardClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour)) * 60;
                     m_gameLength = Settings.HardModeTime;
+                    m_timeText.text = "Shift Ends At: " + Settings.HardClockEnd.ToShortTimeString();
                     break;
                 case 2:
                     m_currentClockTime = DateTime.Now;
                     m_endless = true;
+                    m_timeText.text = "Crunch Time";
                     break;
             }
             m_clock.text = m_currentClockTime.ToShortTimeString();
@@ -295,13 +300,20 @@ namespace FSS
         {
             WindowController window = Instantiate(windowGo, m_windowContainer).GetComponent<WindowController>();
             window.Initialize(func, CloseWindow);
-            Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
-            RectTransform winRect = window.GetComponent<RectTransform>();
-            if (pos.y + (winRect.rect.height / 2) > Screen.height / 2)
+            if (window.programWindow)
             {
-                pos.y = (Screen.height / 2) - (winRect.rect.height / 2);
+                window.GetComponent<RectTransform>().anchoredPosition = Vector2.zero;
             }
-            winRect.anchoredPosition = pos;
+            else
+            {
+                Vector2 pos = UnityEngine.Random.insideUnitCircle * (new Vector2(Screen.width, Screen.height) / 2);
+                RectTransform winRect = window.GetComponent<RectTransform>();
+                if (pos.y + (winRect.rect.height / 2) > Screen.height / 2)
+                {
+                    pos.y = (Screen.height / 2) - (winRect.rect.height / 2);
+                }
+                winRect.anchoredPosition = pos;
+            }
             m_currentWindows.Add(window);
         }
         public bool CheckDuplicate(GameObject window)
@@ -360,7 +372,7 @@ namespace FSS
             }
             else
             {
-                if (elapsed < Settings.EasyModeTime)
+                if (elapsed < m_gameLength)
                 {
                     float progress = (elapsed / m_gameLength) * m_totalMinutes;
                     m_currentClockTime = Settings.StartClockTime.AddMinutes(Mathf.RoundToInt(progress));

@@ -8,18 +8,53 @@ namespace FSS
     {
         [SerializeField] private GameObject m_antiAdMenu;
         [SerializeField] private GameObject m_antiAdWindow;
+        public bool AntiAdPurchased
+        {
+            get
+            {
+                return m_antiAdMenu.activeSelf;
+            }
+        }
 
         [SerializeField] private GameObject m_resizeMenu;
         [SerializeField] private GameObject m_resizeWindow;
+        public bool ResizePurchased
+        {
+            get
+            {
+                return m_resizeMenu.activeSelf;
+            }
+        }
 
         [SerializeField] private GameObject m_predictionMenu;
         [SerializeField] private GameObject m_predictionWindow;
+        public bool PredictionPurchased
+        {
+            get
+            {
+                return m_predictionMenu.activeSelf;
+            }
+        }
 
         [SerializeField] private GameObject m_consolidatorMenu;
         [SerializeField] private GameObject m_consolidatorWindow;
+        public bool ConsolidatorPurchased
+        {
+            get
+            {
+                return m_consolidatorMenu.activeSelf;
+            }
+        }
 
         [SerializeField] private GameObject m_timeMenu;
         [SerializeField] private GameObject m_timeWindow;
+        public bool TimePurchased
+        {
+            get
+            {
+                return m_timeMenu.activeSelf;
+            }
+        }
 
         [SerializeField] private GameObject m_purchaseWindow;
 
@@ -193,7 +228,7 @@ namespace FSS
             }
         }
 
-        public void Purchase(int program)
+        public bool Purchase(int program)
         {
             switch (program)
             {
@@ -202,43 +237,51 @@ namespace FSS
                     {
                         m_manager.AddCurrency(-Settings.AntiAdCost);
                         m_antiAdMenu.SetActive(true);
+                        return true;
                     }
-                    break;
+                    return false;
                 case 1:
                     if (Settings.ResizeCost <= m_manager.CurrentCurrency && !m_resizeMenu.activeSelf)
                     {
                         m_manager.AddCurrency(-Settings.ResizeCost);
                         m_resizeMenu.SetActive(true);
+                        return true;
                     }
-                    break;
+                    return false;
                 case 2:
                     if (Settings.PredictionCost <= m_manager.CurrentCurrency && !m_predictionMenu.activeSelf)
                     {
                         m_manager.AddCurrency(-Settings.PredictionCost);
                         m_predictionMenu.SetActive(true);
+                        return true;
                     }
-                    break;
+                    return false;
                 case 3:
                     if (Settings.ConsolidatorCost <= m_manager.CurrentCurrency && !m_consolidatorMenu.activeSelf)
                     {
                         m_manager.AddCurrency(-Settings.ConsolidatorCost);
                         m_consolidatorMenu.SetActive(true);
+                        return true;
                     }
-                    break;
+                    return false;
                 case 4:
                     if (Settings.TimeCost <= m_manager.CurrentCurrency && !m_timeMenu.activeSelf)
                     {
                         m_manager.AddCurrency(-Settings.TimeCost);
                         m_timeMenu.SetActive(true);
+                        return true;
                     }
-                    break;
+                    return false;
                 case 5:
                     if (Settings.RamCost <= m_manager.CurrentCurrency)
                     {
                         m_manager.AddCurrency(-Settings.TimeCost);
                         Trigger(AdData.Function.Ram);
+                        return true;
                     }
-                    break;
+                    return false;
+                default:
+                    return false;
             }
         }
 
