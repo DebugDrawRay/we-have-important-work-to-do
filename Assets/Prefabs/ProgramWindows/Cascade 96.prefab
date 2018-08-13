@@ -90,10 +90,9 @@ GameObject:
   m_Component:
   - component: {fileID: 224210762282216576}
   - component: {fileID: 114651772777953858}
-  - component: {fileID: 114552771631949102}
   m_Layer: 5
   m_Name: Cascade 96
-  m_TagString: Untagged
+  m_TagString: consolidate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -246,7 +245,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114651772777953858}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -299,7 +298,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114651772777953858}
         m_MethodName: ToggleMinimized
         m_Mode: 1
         m_Arguments:
@@ -466,21 +465,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114552771631949102
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1209047126603470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b18c70326935dc46ad46d79f7ca5f4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_image: {fileID: 114423955635608586}
-  p_frames: []
-  p_fps: 0
-  loadFromPublic: 0
 --- !u!114 &114651772777953858
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -492,9 +476,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb3e7b77809db94eba302672a693a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_minimizeIcon: {fileID: 0}
+  m_minimizeIcon: {fileID: 1193334840996306, guid: 90cbb52a0c2db5e46bcf7c96dba7d352,
+    type: 2}
   m_name: {fileID: 114707963720371166}
   m_icon: {fileID: 114985286999503740}
+  programWindow: 1
 --- !u!114 &114707963720371166
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -24,7 +24,15 @@ namespace FSS
         {
             get
             {
-                return (Settings.WindowCost * m_currentWindows.Count) + ProgramManager.instance.TotalRamUse;
+                int validWindowCount = 0;
+                foreach(WindowController w in m_currentWindows)
+                {
+                    if(!w.programWindow)
+                    {
+                        validWindowCount++;
+                    }
+                }
+                return (Settings.WindowCost * validWindowCount) + ProgramManager.instance.TotalRamUse;
             }
         }
 
@@ -296,12 +304,38 @@ namespace FSS
             winRect.anchoredPosition = pos;
             m_currentWindows.Add(window);
         }
+        public bool CheckDuplicate(GameObject window)
+        {
+            foreach(WindowController w in m_currentWindows)
+            {
+                if(w.gameObject.CompareTag(window.tag))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+        public void CloseWindow(String tag)
+        {
+            foreach (WindowController w in m_currentWindows)
+            {
+                if (!w.CompareTag(tag))
+                {
+                    w.Close();
+                    return;
+                }
+            }
+        }
         public void CloseWindow(WindowController window)
         {
             if(m_currentWindows.Contains(window))
             {
+                if(!window.programWindow)
+                {
+                    AddCurrency(Settings.CurrencyOnClose);
+                }
                 m_currentWindows.Remove(window);
-                AddCurrency(Settings.CurrencyOnClose);
+
             }
         }
 
@@ -344,10 +378,22 @@ namespace FSS
             m_playerName = name;
             m_welcomePrompt.m_textToWrite = "> Good morning " + name +".";
         }
-        public void CloseRandom()
+        private int m_maxIterations = 10;
+        public void CloseRandom(int i = 0)
         {
+            i++;
             int ran = UnityEngine.Random.Range(0, m_currentWindows.Count);
-            m_currentWindows[ran].Close();
+            if (!m_currentWindows[ran].programWindow)
+            {
+                m_currentWindows[ran].Close();
+            }
+            else
+            {
+                if (i < 10)
+                {
+                    CloseRandom(i);
+                }
+            }
         }
         public void TransitionToNextState(int state)
         {

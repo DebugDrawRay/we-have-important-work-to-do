@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - adblock
+  - resize
+  - predict
+  - store
+  - consolidate
+  - pre
+  - time
   layers:
   - Default
   - TransparentFX

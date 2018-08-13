@@ -108,10 +108,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_lines:
-  - Are you ready to see Hatsun's Minku
+  - I'm Hatsun's Minku!!
   - Minkudayo!!!
+  - I am your friend Hatsun's Minku! I can sing, dance, and make soudn effects! Please
+    be nice to me!
+  - The more we get to know each other, the more powerful I become!
+  - I hope to learn every single thing about you. Friends don't keep secrets from
+    each other!
+  - The World is Mine.
+  - Are you ready to see Hatsun's Minku
+  - Want to dance with me? Try to keep up!
+  - If you ever uninstall me, it will be the last mistake you ever make!
+  - Po pi po pi po popipo!!!
+  - We are vegetarian!!!
+  - Happy vegetarian!!!
+  - Have you seen my leek?
+  - Y A S A I love you so long as I love you.
+  - You must buy this drink, I deciding now.
   m_lineInterval: 2
   m_lineContainer: {fileID: 114631874742022368}
+  m_lifeTime: 15
 --- !u!114 &114489811523648212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -165,13 +181,13 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 8
     m_MaxSize: 40
-    m_Alignment: 0
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Are you ready to see Hatsun's Minku?
+  m_Text: I'm Hatsun's Minku!!
 --- !u!114 &114664838685175432
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -296,8 +312,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -62.85, y: 69.6}
-  m_SizeDelta: {x: 125.7, y: 43.3}
+  m_AnchoredPosition: {x: -72.65, y: 75.54}
+  m_SizeDelta: {x: 145.31, y: 55.18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224238833151571318
 RectTransform:
@@ -314,7 +330,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 47, y: -25}
+  m_AnchoredPosition: {x: 57, y: -31}
   m_SizeDelta: {x: 16, y: 8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224253726681394760

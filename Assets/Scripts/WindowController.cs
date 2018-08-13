@@ -9,7 +9,7 @@ namespace FSS
         [SerializeField] private GameObject m_minimizeIcon;
         [SerializeField] private SuperTextMesh m_name;
         [SerializeField] private Image m_icon;
-        [SerializeField] private bool m_programWindow;
+        public bool programWindow;
         private AdData.Function m_function;
         private Toggle m_miniIcon;
 		private RectTransform m_rt;
@@ -42,6 +42,10 @@ namespace FSS
 
             m_onClose += callback;
             transform.SetAsLastSibling();
+            if (programWindow)
+            {
+                ProgramManager.instance.Trigger(m_function, true);
+            }
         }
 
         public void Initialize(AdData data, GameManager.WindowCallback callback, bool startMinimized = false)
@@ -66,6 +70,11 @@ namespace FSS
 
             m_onClose += callback;
             transform.SetAsLastSibling();
+            if (programWindow)
+            {
+                ProgramManager.instance.Trigger(m_function, true);
+            }
+
         }
         public void ToggleMinimized()
 		{
@@ -86,6 +95,10 @@ namespace FSS
 
         public void Close()
 		{
+            if (programWindow)
+            {
+                ProgramManager.instance.Trigger(m_function, false);
+            }
             m_onClose(this);
             Destroy(gameObject);
             Destroy(m_miniIcon.gameObject);
@@ -104,15 +117,8 @@ namespace FSS
             transform.SetAsLastSibling();
             if (m_function != AdData.Function.None)
             {
-                if(m_programWindow)
-                {
-
-                }
-                else
-                {
-                    PenaltyController.instance.TriggerPenalty(m_function);
-                    Close();
-                }
+                PenaltyController.instance.TriggerPenalty(m_function);
+                Close();
             }
         }
         public void Resize(Vector2 newSize)

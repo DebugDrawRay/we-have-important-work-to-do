@@ -23,11 +23,15 @@ public class AnimatedSprite : MonoBehaviour
     {
         m_frames = frames;
         m_fps = fps;
+        if (frames != null && frames[0] != null)
+        {
+            m_image.sprite = m_frames[0];
+        }
         m_loaded = true;
     }
     private void Update()
     {
-        if (m_loaded)
+        if (m_loaded && m_fps != 0)
         {
             int index = Mathf.RoundToInt(Time.time * m_fps);
             index = index % m_frames.Length;

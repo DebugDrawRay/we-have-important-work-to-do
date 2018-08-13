@@ -20,10 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 224763817257333826}
   - component: {fileID: 114528454894627580}
-  - component: {fileID: 114900096462843780}
   m_Layer: 5
   m_Name: Turbino Underclocker
-  m_TagString: Untagged
+  m_TagString: time
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -227,7 +226,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114528454894627580}
         m_MethodName: ToggleMinimized
         m_Mode: 1
         m_Arguments:
@@ -332,9 +331,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb3e7b77809db94eba302672a693a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_minimizeIcon: {fileID: 0}
+  m_minimizeIcon: {fileID: 1379050607953074, guid: 9e81a6145b7f02f4cb59cc5453615f50,
+    type: 2}
   m_name: {fileID: 114538169712387546}
   m_icon: {fileID: 114396331781574500}
+  programWindow: 1
 --- !u!114 &114538169712387546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1166,7 +1167,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114528454894627580}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -1316,21 +1317,6 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &114900096462843780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1196867328968094}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b18c70326935dc46ad46d79f7ca5f4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_image: {fileID: 114916190043929862}
-  p_frames: []
-  p_fps: 0
-  loadFromPublic: 0
 --- !u!114 &114903647737135644
 MonoBehaviour:
   m_ObjectHideFlags: 1

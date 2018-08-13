@@ -11,7 +11,7 @@ namespace FSS
         public const float StartRam = 32;
         public const string RamUnit = "mb";
         public const float PurchasableRam = 5;
-
+        
         public const float AntiAdRamCost = 5;
         public const float ResizeRamCost = 5;
         public const float PredictionRamCost = 5;
@@ -37,7 +37,7 @@ namespace FSS
         public const int PredictionCost = 10;
         public const int ConsolidatorCost = 10;
         public const int TimeCost = 10;
-
+        public const int RamCost = 10;
         //Penalties
         public const float PenaltyTime = 15f;
         public const float PenaltySlowFactor = 2f;

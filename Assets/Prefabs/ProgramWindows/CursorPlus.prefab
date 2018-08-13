@@ -1431,6 +1431,7 @@ MonoBehaviour:
   m_minimizeIcon: {fileID: 0}
   m_name: {fileID: 114220318576661514}
   m_icon: {fileID: 114426306086491574}
+  programWindow: 1
 --- !u!114 &114858884300411330
 MonoBehaviour:
   m_ObjectHideFlags: 1

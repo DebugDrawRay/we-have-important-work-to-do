@@ -124,7 +124,7 @@ namespace FSS
         {
             if (m_antiAdActive)
             {
-                if(m_lastAd + Time.time < Time.time)
+                if(m_lastAd + Settings.AntiAdCloseInterval < Time.time)
                 {
                     m_manager.CloseRandom();
                     m_lastAd = Time.time;
@@ -137,6 +137,7 @@ namespace FSS
                     m_predictionActive = false;
                     m_currentPrediction.gameObject.SetActive(false);
                     m_predictionMenu.SetActive(false);
+                    m_manager.CloseWindow("pre");
                 }
             }
             if (m_timeActive)
@@ -154,22 +155,40 @@ namespace FSS
             switch(program)
             {
                 case 0:
-                    m_manager.AddWindow(m_antiAdWindow, AdData.Function.AntiAd);
+                    if (!m_manager.CheckDuplicate(m_antiAdWindow))
+                    {
+                        m_manager.AddWindow(m_antiAdWindow, AdData.Function.AntiAd);
+                    }
+                    break;
+                case 1:
+                    if (!m_manager.CheckDuplicate(m_resizeWindow))
+                    {
+                        m_manager.AddWindow(m_resizeWindow, AdData.Function.Resize);
+                    }
                     break;
                 case 2:
-                    m_manager.AddWindow(m_resizeWindow, AdData.Function.Resize);
+                    if (!m_manager.CheckDuplicate(m_predictionWindow))
+                    {
+                        m_manager.AddWindow(m_predictionWindow, AdData.Function.Prediction);
+                    }
                     break;
                 case 3:
-                    m_manager.AddWindow(m_predictionWindow, AdData.Function.Prediction);
+                    if (!m_manager.CheckDuplicate(m_consolidatorWindow))
+                    {
+                        m_manager.AddWindow(m_consolidatorWindow, AdData.Function.Consolidate);
+                    }
                     break;
                 case 4:
-                    m_manager.AddWindow(m_consolidatorWindow, AdData.Function.Consolidate);
+                    if (!m_manager.CheckDuplicate(m_timeWindow))
+                    {
+                        m_manager.AddWindow(m_timeWindow, AdData.Function.Time);
+                    }
                     break;
                 case 5:
-                    m_manager.AddWindow(m_timeWindow, AdData.Function.Time);
-                    break;
-                case 6:
-                    m_manager.AddWindow(m_purchaseWindow, AdData.Function.None);
+                    if (!m_manager.CheckDuplicate(m_purchaseWindow))
+                    {
+                        m_manager.AddWindow(m_purchaseWindow, AdData.Function.None);
+                    }
                     break;
             }
         }
@@ -213,10 +232,17 @@ namespace FSS
                         m_timeMenu.SetActive(true);
                     }
                     break;
+                case 5:
+                    if (Settings.RamCost <= m_manager.CurrentCurrency)
+                    {
+                        m_manager.AddCurrency(-Settings.TimeCost);
+                        Trigger(AdData.Function.Ram);
+                    }
+                    break;
             }
         }
 
-        public void Trigger(AdData.Function func, bool active)
+        public void Trigger(AdData.Function func, bool active = false)
         {
             switch (func)
             {
@@ -230,16 +256,22 @@ namespace FSS
                     m_manager.AddRam(Settings.PurchasableRam);
                     break;
                 case AdData.Function.Prediction:
-                    m_predictionActive = true;
-                    m_currentPrediction.gameObject.SetActive(true);
-                    m_predictionStart = Time.time;
+                    if (active)
+                    {
+                        m_predictionActive = true;
+                        m_currentPrediction.gameObject.SetActive(true);
+                        m_predictionStart = Time.time;
+                    }
                     break;
                 case AdData.Function.Consolidate:
                     m_consolidateActive = active;
                     break;
                 case AdData.Function.Time:
-                    m_timeActive = true;
-                    m_timeStart = Time.time;
+                    if (active)
+                    {
+                        m_timeActive = true;
+                        m_timeStart = Time.time;
+                    }
                     break;
             }
         }

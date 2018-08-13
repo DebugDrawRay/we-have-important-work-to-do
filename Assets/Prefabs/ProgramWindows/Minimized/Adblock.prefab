@@ -108,10 +108,9 @@ GameObject:
   m_Component:
   - component: {fileID: 224549503367291012}
   - component: {fileID: 114805003381277596}
-  - component: {fileID: 114486625010527586}
   m_Layer: 5
   m_Name: Adblock
-  m_TagString: Untagged
+  m_TagString: adblock
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -758,11 +757,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 115, y: -22.5, z: 0}
   rawBottomRightBounds: {x: -115, y: 22.5, z: 0}
-  topLeftBounds: {x: 306, y: 227.5, z: 0}
-  topRightBounds: {x: 536, y: 227.5, z: 0}
-  bottomLeftBounds: {x: 306, y: 182.5, z: 0}
-  bottomRightBounds: {x: 536, y: 182.5, z: 0}
-  centerBounds: {x: 421, y: 205, z: 0}
+  topLeftBounds: {x: 306, y: 584.9, z: 0}
+  topRightBounds: {x: 536, y: 584.9, z: 0}
+  bottomLeftBounds: {x: 306, y: 539.9, z: 0}
+  bottomRightBounds: {x: 536, y: 539.9, z: 0}
+  centerBounds: {x: 421, y: 562.4, z: 0}
   maxX: 183
   minY: -21
   unwrappedMaxX: 182.625
@@ -894,7 +893,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114805003381277596}
         m_MethodName: ToggleMinimized
         m_Mode: 1
         m_Arguments:
@@ -1966,11 +1965,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 109, y: -8, z: 0}
   rawBottomRightBounds: {x: -109, y: 8, z: 0}
-  topLeftBounds: {x: 306.00003, y: 384, z: 0}
-  topRightBounds: {x: 524, y: 384, z: 0}
-  bottomLeftBounds: {x: 306.00003, y: 368, z: 0}
-  bottomRightBounds: {x: 524, y: 368, z: 0}
-  centerBounds: {x: 415, y: 376, z: 0}
+  topLeftBounds: {x: 306.00003, y: 741.4, z: 0}
+  topRightBounds: {x: 524, y: 741.4, z: 0}
+  bottomLeftBounds: {x: 306.00003, y: 725.4, z: 0}
+  bottomRightBounds: {x: 524, y: 725.4, z: 0}
+  centerBounds: {x: 415, y: 733.4, z: 0}
   maxX: 150.08
   minY: -8
   unwrappedMaxX: 151.072
@@ -2043,21 +2042,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114486625010527586
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1392694500251762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9b18c70326935dc46ad46d79f7ca5f4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_image: {fileID: 114071677632710000}
-  p_frames: []
-  p_fps: 0
-  loadFromPublic: 0
 --- !u!114 &114493279220436144
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2272,7 +2256,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 114805003381277596}
         m_MethodName: Close
         m_Mode: 1
         m_Arguments:
@@ -2441,9 +2425,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb3e7b77809db94eba302672a693a3e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_minimizeIcon: {fileID: 0}
+  m_minimizeIcon: {fileID: 1710372062794012, guid: 7580a28646376d14c8ee93e8690d7ec3,
+    type: 2}
   m_name: {fileID: 114385606985841916}
   m_icon: {fileID: 114678497252817586}
+  programWindow: 1
 --- !u!114 &114813403258485184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3131,11 +3117,11 @@ MonoBehaviour:
   textMesh: {fileID: 0}
   rawTopLeftBounds: {x: 113, y: -8.5, z: 0}
   rawBottomRightBounds: {x: -113, y: 8.5, z: 0}
-  topLeftBounds: {x: 310, y: 164.79001, z: 0}
-  topRightBounds: {x: 536, y: 164.79001, z: 0}
-  bottomLeftBounds: {x: 310, y: 147.79001, z: 0}
-  bottomRightBounds: {x: 536, y: 147.79001, z: 0}
-  centerBounds: {x: 423, y: 156.29001, z: 0}
+  topLeftBounds: {x: 310, y: 522.19, z: 0}
+  topRightBounds: {x: 536, y: 522.19, z: 0}
+  bottomLeftBounds: {x: 310, y: 505.19, z: 0}
+  bottomRightBounds: {x: 536, y: 505.19, z: 0}
+  centerBounds: {x: 423, y: 513.69, z: 0}
   maxX: 103.125
   minY: -9
   unwrappedMaxX: 104
@@ -3584,7 +3570,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 22, y: -35}
+  m_AnchoredPosition: {x: 22, y: 322.4}
   m_SizeDelta: {x: 276, y: 250}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224582762629844414
