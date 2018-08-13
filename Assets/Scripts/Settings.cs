@@ -19,7 +19,7 @@ namespace FSS
         public const float TimeRamCost = 5;
 
         //Time 
-        public const float StartPopupInterval = 3f;
+        public const float StartPopupInterval = .5f;
 
         public static DateTime StartClockTime = new DateTime(1986, 1, 1, 9, 0, 0);
         public static DateTime EasyClockEnd = new DateTime(1986, 1, 1, 12, 0, 0);

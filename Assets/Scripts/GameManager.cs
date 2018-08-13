@@ -229,9 +229,12 @@ namespace FSS
             if (victory)
             {
                 m_shutdown.SetActive(true);
+                AudioManager.PlaySfx(m_successSound);
             }
             else
             {
+                AudioManager.StopAll();
+                AudioManager.PlaySfx(m_glitchSounds);
                 GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceCamera;
                 GetComponent<Canvas>().worldCamera = Camera.main;
                 Tween glitch = DOTween.To(() => m_glitch.intensity, x => m_glitch.intensity = x, .5f, m_glitchSpeed);

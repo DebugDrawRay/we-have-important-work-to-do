@@ -10,6 +10,9 @@ namespace FSS
         [SerializeField] private GameObject m_minimizeIcon;
         [SerializeField] private SuperTextMesh m_name;
         [SerializeField] private Image m_icon;
+        [SerializeField] private AudioClip m_clickSound;
+        [SerializeField] private AudioClip m_adSound;
+
         public bool programWindow;
         private AdData.Function m_function;
         private Toggle m_miniIcon;
