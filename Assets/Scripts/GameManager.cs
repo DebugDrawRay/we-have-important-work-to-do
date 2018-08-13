@@ -255,6 +255,9 @@ namespace FSS
             {
                 m_shutdown.SetActive(true);
                 AudioManager.PlaySfx(m_successSound);
+                string time = Mathf.Floor(m_elapsedTime / 60).ToString("00") + ":" + Mathf.RoundToInt(m_elapsedTime % 60).ToString("00");
+                m_successResults.text = "Play Time: " + time + " - Ads Closed: " + m_adsClosed.ToString() + " - CeleryBucks Earned: " + m_lifetimeMoney + " - Malware Attacks: " + m_penalties.ToString();
+
             }
             else
             {
@@ -272,7 +275,6 @@ namespace FSS
             GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             m_glitch.intensity = 0;
             string time = Mathf.Floor(m_elapsedTime / 60).ToString("00") + ":" + Mathf.RoundToInt(m_elapsedTime % 60).ToString("00");
-
             m_failureResults.text = "Play Time: " + time + " - Ads Closed: " + m_adsClosed.ToString() + " - CeleryBucks Earned: " + m_lifetimeMoney + " - Malware Attacks: " + m_penalties.ToString();
         }
 
