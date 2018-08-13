@@ -21,7 +21,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 3
     sfx: {fileID: 8300000, guid: 0201fe7bf06d47046848a8fd0bb7244b, type: 3}
-    func: 0
+    func: 14
   - name: Cookie Time
     frames:
     - {fileID: 21300000, guid: c138150e4a7458e4f83fd66067806b60, type: 3}
@@ -49,7 +49,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
     sfx: {fileID: 0}
-    func: 0
+    func: 14
   - name: Free iPod Zune 300GB Click Here
     frames:
     - {fileID: 21300000, guid: 2d4bd56710c63fa46b94cdb61992b394, type: 3}
@@ -57,7 +57,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
     sfx: {fileID: 8300000, guid: 4c37e20b0f4db3a44974952b5d5e18cb, type: 3}
-    func: 0
+    func: 14
   - name: Gondolove Dot Gon
     frames:
     - {fileID: 21300000, guid: 70b0431c899f97d4e97a450f00a898d0, type: 3}
@@ -104,7 +104,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
     sfx: {fileID: 8300000, guid: 38d73d6d438038246ae0537139611768, type: 3}
-    func: 0
+    func: 14
   - name: 77% of people are WRONG
     frames:
     - {fileID: 21300000, guid: f4a10a14a600b774db43f9d0ea537ff5, type: 3}
@@ -112,7 +112,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
     sfx: {fileID: 0}
-    func: 0
+    func: 14
   - name: BOWSER in the HAT WORLD
     frames:
     - {fileID: 21300000, guid: b8ea398f1616b4c408fe68a5eb820f56, type: 3}
@@ -188,7 +188,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
     sfx: {fileID: 0}
-    func: 0
+    func: 14
   - name: help
     frames:
     - {fileID: 21300000, guid: c30973e4f47269d419eceeeb2a80ab96, type: 3}
@@ -222,7 +222,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
     sfx: {fileID: 0}
-    func: 0
+    func: 14
   - name: The Maladboy Madlad 97
     frames:
     - {fileID: 21300000, guid: d2a6d80213f3b7a4c80036669cb083ca, type: 3}
@@ -274,7 +274,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
     sfx: {fileID: 0}
-    func: 0
+    func: 14
   - name: OUR COMPUTERS CAN
     frames:
     - {fileID: 21300000, guid: 61395c73f6697ec4990449fad98be9e7, type: 3}
@@ -283,7 +283,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
     sfx: {fileID: 8300000, guid: 6746f07af9d8f5f42b41b941337748e4, type: 3}
-    func: 0
+    func: 14
   - name: Wife
     frames:
     - {fileID: 21300000, guid: e6041be215731f847b57afb1d0b5a41d, type: 3}
