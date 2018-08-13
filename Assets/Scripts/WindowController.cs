@@ -111,8 +111,10 @@ namespace FSS
         {
             m_cursorOffset = transform.position - Input.mousePosition;
             transform.SetAsLastSibling();
+            AudioManager.PlaySfx(m_clickSound);
+
         }
-		public void Drag()
+        public void Drag()
 		{
             transform.position = m_cursorOffset + Input.mousePosition;
         }
@@ -144,8 +146,13 @@ namespace FSS
             transform.SetAsLastSibling();
             if (m_function != AdData.Function.None && !programWindow)
             {
+                AudioManager.PlaySfx(m_adSound);
                 PenaltyController.instance.TriggerPenalty(m_function);
                 Close();
+            }
+            else
+            {
+                AudioManager.PlaySfx(m_clickSound);
             }
         }
         public void Resize(Vector2 newSize)
