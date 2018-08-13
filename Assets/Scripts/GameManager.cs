@@ -205,14 +205,14 @@ namespace FSS
             switch (mode)
             {
                 case 0:
-                    m_totalMinutes = (Mathf.Abs(Settings.EasyClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour)) * 60;
+                    m_totalMinutes = (Mathf.Abs(Settings.EasyClockEnd.Hour - Settings.StartClockTime.Hour)) * 60;
                     m_gameLength = Settings.EasyModeTime;
                     m_timeText.text = "Shift Ends At: " + Settings.EasyClockEnd.ToShortTimeString();
                     m_popUpStartInterval = Settings.EasyStartPopupInterval;
                     m_popUpEndInterval = Settings.EasyEndPopupInterval;
                     break;
                 case 1:
-                    m_totalMinutes = (Mathf.Abs(Settings.HardClockEnd.ToUniversalTime().Hour - Settings.StartClockTime.ToUniversalTime().Hour)) * 60;
+                    m_totalMinutes = (Mathf.Abs(Settings.HardClockEnd.Hour - Settings.StartClockTime.Hour)) * 60;
                     m_gameLength = Settings.HardModeTime;
                     m_timeText.text = "Shift Ends At: " + Settings.HardClockEnd.ToShortTimeString();
                     m_popUpStartInterval = Settings.HardStartPopupInterval;
