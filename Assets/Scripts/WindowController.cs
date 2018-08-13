@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 namespace FSS
 {
 	public class WindowController : MonoBehaviour 
@@ -127,7 +128,7 @@ namespace FSS
             }
             if (position.x > Screen.width / 2)
             {
-                position.x = (Screen.width / 4) - (winRect.rect.width / 2);
+                position.x = (Screen.width / 2) - (winRect.rect.width * .25f);
             }
             if (position.x < -(Screen.width / 2))
             {
@@ -138,7 +139,7 @@ namespace FSS
         public void WindowFunction()
         {
             transform.SetAsLastSibling();
-            if (m_function != AdData.Function.None)
+            if (m_function != AdData.Function.None && !programWindow)
             {
                 PenaltyController.instance.TriggerPenalty(m_function);
                 Close();

@@ -29,11 +29,11 @@ namespace FSS
         }
         public void Update()
         {
-            m_adPurchase.SetActive(!ProgramManager.instance.AntiAdPurchased);
-            m_predictionPurchase.SetActive(!ProgramManager.instance.PredictionPurchased);
-            m_consolidatorPurchase.SetActive(!ProgramManager.instance.ConsolidatorPurchased);
-            m_timePurchase.SetActive(!ProgramManager.instance.TimePurchased);
-            m_resizePurchase.SetActive(!ProgramManager.instance.ResizePurchased);
+            m_adPurchase.SetActive(ProgramManager.instance.AntiAdAvailable);
+            m_predictionPurchase.SetActive(ProgramManager.instance.PredictionAvailable);
+            m_consolidatorPurchase.SetActive(ProgramManager.instance.ConsolidatorAvailable);
+            m_timePurchase.SetActive(ProgramManager.instance.TimeAvailable);
+            m_resizePurchase.SetActive(ProgramManager.instance.ResizeAvailable);
         }
 
         public void PurchaseConfirm(bool success)

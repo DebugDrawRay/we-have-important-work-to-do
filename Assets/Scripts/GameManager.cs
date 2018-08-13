@@ -96,6 +96,18 @@ namespace FSS
 
         [Header("Information")]
         [SerializeField] private SuperTextMesh m_timeText;
+        [SerializeField] private GameObject m_shutdownWindow;
+
+        [Header("Audio")]
+        [SerializeField]private AudioClip m_bootJingle;
+        [SerializeField]private AudioClip m_ambientLoop;
+        [SerializeField]private AudioClip m_startUpSounds;
+        [SerializeField]private AudioClip m_shutDownSounds;
+        [SerializeField]private AudioClip m_glitchSounds;
+        [SerializeField]private AudioClip m_successSound;
+
+
+
         public bool GameActive
         {
             get
@@ -117,9 +129,11 @@ namespace FSS
             Complete
         }
         public delegate void WindowCallback(WindowController windows);
+        public static GameManager instance;
         private void Awake()
         {
             Initialize();
+            instance = this;
         }
         private void Initialize()
         {
@@ -255,6 +269,13 @@ namespace FSS
                 m_lastWindowTime = Time.time;
             }
         }
+        public void PromptShutDown()
+        {
+            if(m_currentState == GameState.InGame && CheckDuplicate(m_shutdownWindow))
+            {
+                AddWindow(m_shutdownWindow, AdData.Function.None);
+            }
+        }
 
         private void AddPopUp()
         {
@@ -331,10 +352,10 @@ namespace FSS
         {
             foreach (WindowController w in m_currentWindows)
             {
-                if (!w.CompareTag(tag))
+                if (w.gameObject.CompareTag(tag))
                 {
                     w.Close();
-                    return;
+                    break;
                 }
             }
         }
@@ -461,6 +482,9 @@ namespace FSS
             switch(m_currentState)
             {
                 case GameState.Boot:
+                    AudioManager.PlaySfx(m_bootJingle);
+                    AudioManager.PlaySfx(m_startUpSounds, .25f);
+                    AudioManager.PlayMusic(m_ambientLoop, 0, true);
                     m_managementGroup.SetActive(true);
                     StartCoroutine(BootSequence());
                     break;
@@ -488,6 +512,7 @@ namespace FSS
             Initialize();
             PenaltyController.instance.Reinitialize();
             ProgramManager.instance.Initialize();
+            AudioManager.StopAll();
             EnterState();
         }
         public void DestroyAllWindows()
