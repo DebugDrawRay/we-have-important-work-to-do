@@ -42,14 +42,14 @@ public class AudioManager : MonoBehaviour
             if (!a.isPlaying)
             {
                 a.clip = clip;
-                a.volume = volumeOverride == -1 ? 0 : volumeOverride;
+                a.volume = volumeOverride == -1 ? a.volume : volumeOverride;
                 a.Play();
                 return;
             }
         }
         AudioSource newSource = instance.gameObject.AddComponent<AudioSource>();
         newSource.clip = clip;
-        newSource.volume = volumeOverride == -1 ? 0 : volumeOverride;
+        newSource.volume = volumeOverride;
         newSource.Play();
         m_sfxPool.Add(newSource);
     }
