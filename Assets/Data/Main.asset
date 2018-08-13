@@ -39,7 +39,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
     sfx: {fileID: 0}
-    func: 0
+    func: 14
   - name: FREE Domain Orange Host
     frames:
     - {fileID: 21300000, guid: a5ebad8949495284c874f874b820b297, type: 3}

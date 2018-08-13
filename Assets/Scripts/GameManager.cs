@@ -32,7 +32,7 @@ namespace FSS
                         validWindowCount++;
                     }
                 }
-                return (Settings.WindowCost * validWindowCount) + ProgramManager.instance.TotalRamUse;
+                return (Settings.WindowCost * validWindowCount) + ProgramManager.instance.TotalRamUse + PenaltyController.instance.RamPenalty;
             }
         }
 

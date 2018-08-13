@@ -61,7 +61,8 @@ namespace FSS
         public const float PenaltySpeedFactor = 4f;
         public const float EmoteRate = .05f;
         public const float PetPositionRate = 1f;
-
+        public const float VirusRamPenalty = 5f;
+        public const float VirusLength = 15f;
         //Programs
         public const float AntiAdCloseInterval = 2f;
         public const float TimeSpeedMulti = 4f;

@@ -14,6 +14,7 @@ namespace FSS
         [SerializeField] private AudioClip m_adSound;
 
         public bool programWindow;
+        public bool unmanaged;
         private AdData.Function m_function;
         private Toggle m_miniIcon;
 		private RectTransform m_rt;
@@ -25,16 +26,22 @@ namespace FSS
 
         private void Awake()
         {
-            m_rt = GetComponent<RectTransform>();
-            m_miniIcon = Instantiate(m_minimizeIcon).GetComponent<Toggle>();
-            AllWindows.Add(this);
+            if (!unmanaged)
+            {
+                m_rt = GetComponent<RectTransform>();
+                m_miniIcon = Instantiate(m_minimizeIcon).GetComponent<Toggle>();
+                AllWindows.Add(this);
+            }
         }
 
         private void Start()
         {
-            InterfaceManager.instance.AddToMinimized(m_miniIcon.GetComponent<RectTransform>());
-            m_miniIcon.onValueChanged.AddListener(ToggleMinimizedTaskbar);
-            m_miniIcon.isOn = gameObject.activeSelf;
+            if (!unmanaged)
+            {
+                InterfaceManager.instance.AddToMinimized(m_miniIcon.GetComponent<RectTransform>());
+                m_miniIcon.onValueChanged.AddListener(ToggleMinimizedTaskbar);
+                m_miniIcon.isOn = gameObject.activeSelf;
+            }
         }
 
         public void Initialize(AdData.Function func, GameManager.WindowCallback callback, bool startMinimized = false)
