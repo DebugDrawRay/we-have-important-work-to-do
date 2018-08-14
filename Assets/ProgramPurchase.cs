@@ -57,6 +57,7 @@ namespace FSS
             if (success)
             {
                 StartCoroutine(PurchasePrompt());
+                GameManager.instance.PromptPurchase();
             }
             else
             {

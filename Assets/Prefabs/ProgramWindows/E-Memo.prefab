@@ -15697,12 +15697,13 @@ MonoBehaviour:
     quadIndex: -1
     materialData: {fileID: 0}
     soundClipData: {fileID: 0}
-  _text: "\nFrom: Bill \"Flarhgunnstow\" Grates\n\tCEO MichaelSoft-Celery Corp.\r\nRe:
+  _text: "\nFrom: Bill \"Flarhgunnstow\" Grates\r\n    CEO MichaelSoft-Celery Corp.\r\nRe:
     Task Reminder\r\n\r\nWelcome back to another day of work, [INSERT NAME HERE]!
     We in upper management would like to reiterate your tasks for today.\r\n\r\n1.
-    Close the ads to earn $$CASH$$\r\n\n2. Don't overload the computer RAM with e-viruses.\r\n\n3.
-    You can use some of your earnings to buy addons from the Celery Shop, but it's
-    coming out of your paycheck.\r\n\r\nWork hard and make us lots of CeleryBucks!"
+    Close the ads to earn $$CASH$$\r\n\r\n2. Don't overload the computer RAM with
+    e-viruses.\r\n\r\n3. You can use some of your earnings to buy addons from the
+    Celery Shop: access them through the Start Menu. (Expenditures will be deducted
+    from your paycheck.)\r\n\r\nWork hard and make us lots of CeleryBucks!"
   drawText: "\nFrom: Bill \"Flarhgunnstow\" Grates\n\tCEO MichaelSoft-Celery Corp.\r\nRe:
     Task Reminder\r\n\r\nWelcome back to another day of work, [INSERT NAME HERE]!
     We in upper management would like to reiterate your tasks for today.\r\n\r\n1.

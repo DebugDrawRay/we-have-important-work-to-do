@@ -56,7 +56,7 @@ namespace FSS
             }
         }
         private int m_currentCurrency;
-        
+        public GameObject purchaseIndication;
         [Header("Time")]
         [SerializeField] private SuperTextMesh m_clock;
         private DateTime m_currentClockTime;
@@ -112,10 +112,10 @@ namespace FSS
         [SerializeField]private AudioClip m_glitchSounds;
         [SerializeField]private AudioClip m_successSound;
 
-        [Header("Nude Tayne")]
-        [SerializeField] private GameObject m_tayne;
-
-
+        [Header("Easter Eggs")]
+        [SerializeField]private AudioClip m_tayneSound;
+        [SerializeField] private GameObject m_nudeTayne;
+        
         //Stats
         private int m_adsClosed;
         private int m_lifetimeMoney;
@@ -187,6 +187,8 @@ namespace FSS
 
             m_currentState = GameState.Boot;
             m_gameStarted = false;
+
+            purchaseIndication.SetActive(false);
         }
 
         private void Start()
@@ -274,11 +276,24 @@ namespace FSS
         }
         public void DisplayBlueScreen()
         {
+            Cursor.visible = false;
             m_blueScreen.SetActive(true);
             GetComponent<Canvas>().renderMode = RenderMode.ScreenSpaceOverlay;
             m_glitch.intensity = 0;
             string time = Mathf.Floor(m_elapsedTime / 60).ToString("00") + ":" + Mathf.RoundToInt(m_elapsedTime % 60).ToString("00");
             m_failureResults.text = "Play Time: " + time + " - Ads Closed: " + m_adsClosed.ToString() + " - CeleryBucks Earned: " + m_lifetimeMoney + " - Malware Attacks: " + m_penalties.ToString();
+        }
+
+        public void PromptPurchase()
+        {
+            StartCoroutine(Purchase());
+        }
+        
+        public IEnumerator Purchase()
+        {
+            purchaseIndication.SetActive(true);
+            yield return new WaitForSeconds(3f);
+            purchaseIndication.SetActive(false);
         }
 
         private void UpdateRam()
@@ -291,7 +306,7 @@ namespace FSS
             }
 
             m_ramText.text = m_currentUseage.ToString() + " / " + TotalRam + Settings.RamUnit;
-            if(m_currentUseage > m_currentRam)
+            if(m_currentUseage > TotalRam)
             {
                 GameComplete(false);
             }
@@ -410,7 +425,19 @@ namespace FSS
                 m_currentWindows.Remove(window);
             }
         }
-
+        public void EvaluateName()
+        {
+            if(m_playerName == "Nude Tayne")
+            {
+                AudioManager.PlaySfx(m_tayneSound);
+                m_nudeTayne.SetActive(true);
+                Invoke("HideEasterEggs", 5.3f);
+            }
+        }
+        public void HideEasterEggs()
+        {
+            m_nudeTayne.SetActive(false);
+        }
         public void AddCurrency(int amount)
         {
             m_currentCurrency += amount;
@@ -458,18 +485,6 @@ namespace FSS
             m_playerName = name;
             m_welcomePrompt.m_textToWrite = "> Good morning " + name +".";
 
-        }
-
-        public void tayneToggle()
-        {
-            if (name == "Nude Tayne")
-            {
-                m_tayne.SetActive(true);
-            }
-            else
-            {
-                m_tayne.SetActive(false);
-            }
         }
 
         private int m_maxIterations = 10;
@@ -543,14 +558,15 @@ namespace FSS
             switch(m_currentState)
             {
                 case GameState.Boot:
+                    Cursor.visible = false;
                     AudioManager.PlaySfx(m_bootJingle);
                     AudioManager.PlaySfx(m_startUpSounds, .25f);
                     AudioManager.PlayMusic(m_ambientLoop, 0, true);
                     m_managementGroup.SetActive(true);
                     StartCoroutine(BootSequence());
-                    m_tayne.SetActive(false);
                     break;
                 case GameState.Login:
+                    Cursor.visible = true;
                     m_loginScreen.SetActive(true);
                     break;
                 case GameState.Sequence:

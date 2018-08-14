@@ -21,7 +21,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 3
     sfx: {fileID: 8300000, guid: 0201fe7bf06d47046848a8fd0bb7244b, type: 3}
-    func: 14
+    func: 0
   - name: Cookie Time
     frames:
     - {fileID: 21300000, guid: c138150e4a7458e4f83fd66067806b60, type: 3}
@@ -112,7 +112,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 2
     sfx: {fileID: 0}
-    func: 14
+    func: 0
   - name: BOWSER in the HAT WORLD
     frames:
     - {fileID: 21300000, guid: b8ea398f1616b4c408fe68a5eb820f56, type: 3}
@@ -188,7 +188,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 5
     sfx: {fileID: 0}
-    func: 14
+    func: 0
   - name: help
     frames:
     - {fileID: 21300000, guid: c30973e4f47269d419eceeeb2a80ab96, type: 3}
@@ -283,7 +283,7 @@ MonoBehaviour:
     icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
     fps: 10
     sfx: {fileID: 8300000, guid: 6746f07af9d8f5f42b41b941337748e4, type: 3}
-    func: 14
+    func: 0
   - name: Wife
     frames:
     - {fileID: 21300000, guid: e6041be215731f847b57afb1d0b5a41d, type: 3}
@@ -310,3 +310,11 @@ MonoBehaviour:
     fps: 3
     sfx: {fileID: 8300000, guid: 81130850bb9d77740aabf0544ae278b4, type: 3}
     func: 0
+  - name: You Win! Click Here
+    frames:
+    - {fileID: 21300000, guid: 5c0589e65a87fb54a8e34d1c14d2ff5b, type: 3}
+    - {fileID: 21300000, guid: 3a8a9ccfb57d00b4185b468c36cfe5a1, type: 3}
+    icon: {fileID: 21300000, guid: 6118a916cede4ec4da76835596d9b803, type: 3}
+    fps: 2
+    sfx: {fileID: 8300000, guid: 19a611832753e0f449b2d76ebe57c416, type: 3}
+    func: 4

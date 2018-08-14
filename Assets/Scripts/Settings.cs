@@ -49,9 +49,9 @@ namespace FSS
 
         //Money
         public const int CurrencyOnClose = 1;
-        public const int AntiAdCost = 50;
-        public const int ResizeCost = 50;
-        public const int PredictionCost = 15;
+        public const int AntiAdCost = 35;
+        public const int ResizeCost = 40;
+        public const int PredictionCost = 10;
         public const int ConsolidatorCost = 15;
         public const int TimeCost = 25;
         public const int RamCost = 35;

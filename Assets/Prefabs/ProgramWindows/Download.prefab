@@ -650,7 +650,7 @@ MonoBehaviour:
   m_clickSound: {fileID: 8300000, guid: 5c3d15a7fc67ece4d8b270f70118ee75, type: 3}
   m_adSound: {fileID: 0}
   programWindow: 1
-  unmanaged: 0
+  unmanaged: 1
 --- !u!114 &114037191203034982
 MonoBehaviour:
   m_ObjectHideFlags: 1

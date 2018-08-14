@@ -81,6 +81,10 @@ namespace FSS
             DestroyAllEmotes();
             DestroyAllPets();
             Cursor.SetCursor(null, Vector2.zero, CursorMode.Auto);
+            if (m_currentVirusWindow)
+            {
+                Destroy(m_currentVirusWindow);
+            }
         }
 
         public void TriggerPenalty(AdData.Function func)
